@@ -1,0 +1,88 @@
+#navbar {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-image: url(../IMG/Fashion/bgfs.jpg) ;
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+    transition: height 0.8s ease;
+}
+
+.container-fs {
+    width: 100%;
+    margin: auto;
+    font-family: sans-serif;
+}
+
+
+
+.search-fs
+{
+    /* position: sticky;
+        top: 0; */
+        /* z-index: 1000; */
+        /* Cao hơn navbar nếu dùng bootstrap */
+        background-color: rgba(255, 255, 255, 0.95);
+        /* Tránh trong suốt khi scroll */
+        padding: 10px 0;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100̀;
+    border-radius: 0px 0px 15px 15px;
+    border-bottom: 1px solid rgb(153, 150, 150);
+}
+
+
+.menu-f
+{
+    display: flex;
+    margin: auto;
+    padding-top: 20px;
+}
+.menu-f>ul li
+{
+    list-style: none;
+}
+.menu-f>ul li a
+{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+
+.search-fs>input
+{
+    padding-left: 10px;
+    width: 45%;
+    border-radius: 15px;
+}
+.search-fs>button
+{
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+}
+.right-fs {
+    display: grid;
+    padding-top: 20px;
+}
+.bg-right>img
+{
+    padding-top: 10px;
+    width: 100%;
+    margin: 0;
+}
+
+#card-fs
+{
+    justify-items: center;
+}
+
+#pagination
+{
+    justify-content: center;
+}

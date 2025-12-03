@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiết kế Web du lịch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet" />    
+    <link rel="stylesheet" href="../CSS/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+    <script src="../JS/global.js"></script>
+</head>
+<body>
+    <script>
+        (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "VT0flOTOShCo2NB2DW9O-"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
+    </script>
+    <div class="container-fluid" id="navbar">
+        <nav class="container-fluid d-flex justify-content-between align-items-center flex-wrap" id="navboss">
+            <div id="nav-left">
+                <ul class="d-flex flex-wrap gap-5 list-unstyled m-0 p-0">
+                <li class="dropdown"><a href="./Homepage.html">Trang chủ</a></li>
+                <li class="dropdown">
+                    <a href="./tourirst.html">Du lịch</a>
+                        <ul class="dropdown-content">
+                            <li><a href="./tour_heritage.html">Tour di tích</a></li>
+                            <li><a href="./tour_travel.html">Tour healing</a></li>
+                        </ul>
+                </li>
+                <li class="dropdown"><a href="./hotel.html">Khách sạn</a></li>
+                <li class="dropdown"><a href="./car-rental.html">Thuê xe</a></li>
+                <li class="dropdown">
+                    <a href="./fashion.html">Thời trang</a>
+                </li>
+                <!-- <li class="dropdown">
+                    <a href="./tools.html">Công cụ</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Balo</a></li>
+                            <li><a href="#">Phụ kiện</a></li>
+                        </ul>
+                </li> -->
+                <li class="dropdown"><a href="./pro5.html">Giới thiệu</a></li>
+            </ul>
+            </div>
+            <div id="nav-right">
+                <ul class="d-flex gap-3 list-unstyled m-0 p-0">
+                    <li><a href="#" class="register" onclick="showForm('registerForm')">Đăng kí</a></li>
+                    <li><a href="#" class="register" onclick="showForm('loginForm')">Đăng nhập</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+
+    <div id="search">
+            <div id="search-bg">
+                <script>
+                const images = 
+                [
+                                'url("../IMG/bg1.jpg")',
+                                'url("../IMG/bg2.jpg")',
+                                'url("../IMG/bg3.jpg")'
+                ];
+
+                let currentIndex = 0;
+                const searchBg = document.getElementById('search-bg');
+
+                function changeBackground() 
+                {
+                    searchBg.style.backgroundImage = images[currentIndex];
+                    currentIndex = (currentIndex + 1) % images.length;
+                }
+
+                    // Gọi lần đầu
+                    changeBackground();
+
+                    // Thay đổi ảnh mỗi 5 giây
+                    setInterval(changeBackground, 5000);
+                </script>
+                <div class="container text-center">
+                    <div class="search-text">
+                        <h1>Khám phá tour du lịch cùng mọi người</h1>
+                        <p>Thời điểm thích hợp để làm một chuyến du lịch thưởng cho bản thân cùng với những người thân yêu</p>
+                    </div>
+                    <div id="search-but" class="mx-auto">
+                        <input type="search" placeholder="Tìm kiếm...">
+                        <button type="submit"><img src="../ICON/search_icon.svg" alt="search_icon"></button>
+                    </div>
+            </div>
+            </div>
+    </div>
+    
+<div id="container">
+    <div id="overlay">
+        <div id="overlay-background" onclick="hideForms()"></div>
+            <!-- Form Đăng ký -->
+        <div id="registerForm" class="form-container">
+            <h3>Đăng ký</h3>
+            <input type="text" placeholder="Số điện thoại / Email" required>
+            <input type="password" placeholder="Mật khẩu" required>
+            <button onclick="hideForms()">Đăng ký</button>
+        </div>
+
+        <!-- Form Đăng nhập -->
+        <div id="loginForm" class="form-container">
+            <h3>Đăng nhập</h3>
+            <input type="text" placeholder="Tên đăng nhập" required>
+            <input type="password" placeholder="Mật khẩu" required>
+            <button onclick="hideForms()">Đăng nhập</button>
+        </div>
+    </div>
+    <div id="content">
+        <article class="why-choose">
+            <div class="why-list">
+                <div class="why-item">
+                    <img src="../IMG/choice.jpg" alt="Vô vàn lựa chọn">
+                    <h3>Vô vàn lựa chọn</h3>
+                    <p>Tìm kiếm niềm vui với gần nửa triệu điểm tham quan, phòng khách sạn và nhiều trải nghiệm thú vị</p>
+                </div>
+            
+                <div class="why-item">
+                    <img src="../IMG/savemoney.jpg" alt="Chơi vui, giá tốt">
+                    <h3>Chơi vui, giá tốt</h3>
+                    <p>Trải nghiệm chất lượng với giá tốt. Tích lũy xu để được thêm ưu đãi</p>
+                </div>
+            
+                <div class="why-item">
+                    <img src="../IMG/why-item.jpg" alt="Dễ dàng và tiện lợi">
+                    <h3>Dễ dàng và tiện lợi</h3>
+                    <p>Đặt vé xác nhận ngay, miễn xếp hàng, miễn phí hủy, tiện lợi cho bạn tha hồ khám phá</p>
+                </div>
+            
+                <div class="why-item">
+                    <img src="../IMG/tinhcay.jpg" alt="Đáng tin cậy">
+                    <h3>Đáng tin cậy</h3>
+                    <p>Tham khảo đánh giá chân thực. Dịch vụ hỗ trợ tận tình, đồng hành cùng bạn mọi lúc, mọi nơi</p>
+                </div>      
+            </div>
+        </article>
+        <h2>Bạn muốn đi đâu chơi?</h2>
+        <div class="destination-container">
+            <div class="destination-card">
+                <img src="../IMG/HCM.jpg" alt="TP HCM">
+                <div class="title">TP Hồ Chí Minh</div>
+            </div>
+            <div class="destination-card">
+                <img src="../IMG/Danang.jpg" alt="Đà Nẵng">
+                <div class="title">Đà Nẵng</div>
+            </div>
+            <div class="destination-card">
+                <img src="../IMG/HN.webp" alt="Hà Nội">
+                <div class="title">Hà Nội</div>
+            </div>
+            <div class="destination-card">
+                <img src="../IMG/PhuQuoc.jpg" alt="Phú Quốc">
+                <div class="title">Phú Quốc</div>
+            </div>
+            <div class="destination-card">
+                <img src="../IMG/Nhatrang.jpg" alt="Nha Trang">
+                <div class="title">Nha Trang</div>
+            </div>
+            <div class="destination-card">
+                <img src="../IMG/HaLongBay.jpg" alt="Halong">
+                <div class="title">Halong</div>
+            </div>
+        </div>
+        
+        <section class="experiences">
+            <h2>Chốt tour Healing chưa ?</h2>
+            <div class="cards">
+                <div class="card card-1">
+                    <div class="card-content">
+                        <h3>Chốt gấp kèo Đà Lạt.</h3>
+                        <p>Deal du lịch HOT nhất</p>
+                        <button>Khám phá</button>
+                    </div>
+                </div>
+                <div class="card card-2">
+                    <div class="card-content">
+                        <h3>Càng Mua Càng Hời</h3>
+                        <p>Ưu đãi hấp dẫn. Càng mua nhiều - càng thêm lợi.</p>
+                        <button>Khám phá</button>
+                    </div>
+                </div>
+                <div class="card card-3">
+                    <div class="card-content">
+                        <h3>Zone Đi khắp Bình Thuận.</h3>
+                        <p>Đi du lịch Phan Thiết nào </p>
+                        <button>Khám phá</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+          
+        <div class="services">
+            <a href="../HTML/hotel.html" class="pink">
+                <i class="fas fa-hotel"></i>
+                <div class="text">
+                    <h3>KHÁCH SẠN</h3>
+                    <p>Khách sạn tốt nhất tại các địa điểm du lịch nổi tiếng.</p>
+                </div>
+            </a>
+        
+            <a href="../HTML/car-rental.html" class="blue">
+                <i class="fas fa-car"></i>
+                <div class="text">
+                    <h3>THUÊ XE</h3>
+                    <p>Các deal hấp dẫn đễ thêu xe tự mình feel nào</p>
+                </div>
+            </a>
+        
+            <a href="../HTML/fashion.html" class="orange">
+                <i class="fas fa-solid fa-glasses"></i>
+                <div class="text">
+                    <h3>THỜI TRANG</h3>
+                    <p>Dịch vụ thời trang phụ kiện mà bạn chắc chắn sẽ cần</p>
+                </div>
+            </a>
+        
+            <a href="../HTML/tools.html" class="cyan">
+                <i class="fas fa-solid fa-user-tie"></i>
+                <div class="text">
+                    <h3>CÔNG CỤ</h3>
+                    <p>Nhiều deal hấp dẫn</p>
+                </div>
+            </a>
+            </div>
+        
+    </div>
+</div>
+    <div id="footer-page">
+        <footer id="br-ft">
+            <div>
+                Student name: Đặng Hoàng Anh Trung<br>
+                Student ID: 24004226 <br>
+                Email: Danghoanganhtrung1234@gmail.com
+            </div>
+            <div class="icon">
+                <a href="https://www.facebook.com/me/" target="_blank"><img src="../ICON/fb.png" alt="fb" class="icon-ft"></a>
+                <a href="https://www.instagram.com/wunnn1234/" target="_blank"><img src="../ICON/ins.png" alt="ins" class="icon-ft"></a>
+                <a href="https://www.tiktok.com/@wunfuen.com.124" target="_blank"><img src="../ICON/tiktok.jpg" alt="tiktok" class="icon-ft"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

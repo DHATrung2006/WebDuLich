@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiết kế Web du lịch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet" /><link rel="stylesheet" href="../CSS/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/pro5.css">
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+    <script src="../JS/global.js"></script>
+</head>
+<body>
+    <script>
+        (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "VT0flOTOShCo2NB2DW9O-"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
+    </script>
+    <div class="container-fluid" id="navbar">
+        <nav class="container-fluid d-flex justify-content-between align-items-center flex-wrap" id="navboss">
+            <div id="nav-left">
+                <ul class="d-flex flex-wrap gap-5 list-unstyled m-0 p-0">
+                    <li class="dropdown"><a href="./Homepage.html">Trang chủ</a></li>
+                    <li class="dropdown">
+                        <a href="./tourirst.html">Du lịch</a>
+                        <ul class="dropdown-content">
+                            <li><a href="./tour_heritage.html">Tour di tích</a></li>
+                            <li><a href="./tour_travel.html">Tour healing</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="./hotel.html">Khách sạn</a></li>
+                    <li class="dropdown"><a href="./car-rental.html">Thuê xe</a></li>
+                    <li class="dropdown">
+                        <a href="./fashion.html">Thời trang</a>
+                    </li>
+                    <!-- <li class="dropdown">
+                        <a href="./tools.html">Công cụ</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Balo</a></li>
+                            <li><a href="#">Phụ kiện</a></li>
+                        </ul>
+                    </li> -->
+                    <li class="dropdown"><a href="./pro5.html">Giới thiệu</a></li>
+                </ul>
+            </div>
+            <!-- <div id="nav-right">
+                <ul class="d-flex gap-3 list-unstyled m-0 p-0">
+                    <li><a href="#" class="register" onclick="showForm('registerForm')">Đăng kí</a></li>
+                    <li><a href="#" class="register" onclick="showForm('loginForm')">Đăng nhập</a></li>
+                </ul>
+            </div> -->
+        </nav>  
+    </div>
+    <section class="hero-intro py-5 bg-light">
+        <div class="container-pro5">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center">
+                    <img src="../IMG/Profile/vs=.png" alt="Ảnh đại diện" class="img-fluid rounded-circle shadow"
+                    style="height: 250px; width: 200px;">
+                </div>
+                <div class="col-md-8" id="profile">
+                    <h3>Xin chào! Tôi là Đặng Hoàng Anh Trung</h3>
+                    <p>Tôi là người sáng lập ra <strong>Đảo Du Lịch</strong> – nơi mang đến những trải nghiệm
+                        tuyệt vời nhất cho mọi hành trình khám phá của bạn.</p>
+                    <p>Với hơn 5 năm kinh nghiệm trong ngành du lịch, tôi luôn đặt chất lượng dịch vụ lên hàng đầu và mong
+                        muốn được đồng hành cùng bạn trên mọi nẻo đường.</p>
+                    <ul class="list-unstyled d-flex gap-3 mt-3" id="item-pro5">
+                        <li><a href="https://www.facebook.com/me/" class="text-primary" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.instagram.com/wunnn1234/" class="text-danger" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.tiktok.com/@wunfuen.com.124" class="text-info" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <aside class="intro-video py-5 bg-light" class="pro5">
+        <div class="container text-center">
+            <h2>Video Giới Thiệu</h2>
+            <p>Xem video để hiểu rõ hơn về chúng tôi!</p>
+    
+            <div class="video-wrapper mt-4">
+                <video controls width="100%" style="max-width: 300px;">
+                    <source src="../video/pro5/Download.mp4" type="video/mp4">
+                    Trình duyệt của bạn không hỗ trợ định dạng video này.
+                </video>
+            </div>
+        </div>
+    </aside>
+    <section class="why-us py-5" class="pro5">
+        <div class="container">
+            <h2 class="text-center mb-4">Tại sao nên chọn Đảo Du Lịch?</h2>
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <i class="fas fa-map-marker-alt fa-2x text-success mb-2"></i>
+                    <h5>Đa dạng tour</h5>
+                    <p>Khám phá khắp mọi miền Tổ quốc với nhiều lựa chọn phù hợp với từng nhu cầu.</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fas fa-dollar-sign fa-2x text-warning mb-2"></i>
+                    <h5>Giá cả hợp lý</h5>
+                    <p>Cam kết giá tốt nhất thị trường đi kèm chất lượng dịch vụ cao cấp.</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fas fa-thumbs-up fa-2x text-primary mb-2"></i>
+                    <h5>Hỗ trợ tận tâm</h5>
+                    <p>Đội ngũ tư vấn viên nhiệt tình, sẵn sàng hỗ trợ 24/7.</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fas fa-bus fa-2x text-danger mb-2"></i>
+                    <h5>An toàn – Tiện lợi</h5>
+                    <p>Giao vé tại nhà, đảm bảo an toàn và tiết kiệm thời gian cho bạn.</p>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="contact-section py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">Liên hệ & Đăng ký Tour</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Họ tên</label>
+                                <input type="text" class="form-control" id="name" placeholder="Nhập họ tên">
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Số điện thoại</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="Ví dụ: 0909xxxxxx">
+                            </div>
+                            <div class="mb-3">
+                                <label for="tour" class="form-label">Bạn quan tâm tour nào?</label>
+                                <input type="text" class="form-control" id="tour" placeholder="Đà Lạt">
+                            </div>
+                            <button type="submit" class="btn btn-dark w-100">Gửi thông tin</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+</body>
+</html>

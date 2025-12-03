@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiết kế Web du lịch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../CSS/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/car.css">
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+    <script src="../JS/global.js"></script>
+</head>
+
+<body>
+    <script>
+        (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "VT0flOTOShCo2NB2DW9O-"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
+    </script>
+    <div class="container-fluid" id="navbar">
+        <nav class="container-fluid d-flex justify-content-between align-items-center flex-wrap" id="navboss">
+            <div id="nav-left">
+                <ul class="d-flex flex-wrap gap-5 list-unstyled m-0 p-0">
+                    <li class="dropdown"><a href="./Homepage.html">Trang chủ</a></li>
+                    <li class="dropdown">
+                        <a href="./tourirst.html">Du lịch</a>
+                        <ul class="dropdown-content">
+                            <li><a href="./tour_heritage.html">Tour di tích</a></li>
+                            <li><a href="./tour_travel.html">Tour healing</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="./hotel.html">Khách sạn</a></li>
+                    <li class="dropdown"><a href="./car-rental.html">Thuê xe</a></li>
+                    <li class="dropdown">
+                        <a href="./fashion.html">Thời trang</a>
+                    </li>
+                    <!-- <li class="dropdown">
+                        <a href="./tools.html">Công cụ</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Balo</a></li>
+                            <li><a href="#">Phụ kiện</a></li>
+                        </ul>
+                    </li> -->
+                    <li class="dropdown"><a href="./pro5.html">Giới thiệu</a></li>
+                </ul>
+            </div>
+            <!-- <div id="nav-right">
+                <ul class="d-flex gap-3 list-unstyled m-0 p-0">
+                    <li><a href="#" class="register" onclick="showForm('registerForm')">Đăng kí</a></li>
+                    <li><a href="#" class="register" onclick="showForm('loginForm')">Đăng nhập</a></li>
+                </ul>
+            </div> -->
+        </nav>
+    </div>
+    <div id="car-rental">
+        <div id="car-bg">
+            <script>
+                window.onload = function () {
+                    const images = [
+                        'url("../IMG/Car_moto-rental/bg1.jpg")',
+                        'url("../IMG/Car_moto-rental/bg2.jpg")',
+                        'url("../IMG/Car_moto-rental/bg3.jpg")'
+                    ];
+
+                    let currentIndex = 0;
+                    const carbg = document.getElementById('car-bg');
+
+                    function changeBackground() {
+                        carbg.style.backgroundImage = images[currentIndex];
+                        currentIndex = (currentIndex + 1) % images.length;
+                    }
+
+                    // Bắt đầu
+                    changeBackground();
+                    setInterval(changeBackground, 5000);
+                };
+            </script>
+            <div id="nav-car">
+                <!-- Header -->
+                <header class="header">
+                    <div class="container">
+                        <div class="form-group">
+                            <label for="pickup-location">Địa điểm nhận xe</label>
+                            <!--để for="pickup-location" liên kết nhãn (label) với một phần tử đầu vào (input) có id="pickup-location"-->
+                            <input type="text" id="pickup-location" placeholder="Chọn địa điểm">
+                        </div>
+                        <div class="form-group">
+                            <label for="pickup-date">Ngày nhận xe</label>
+                            <input type="date" id="pickup-date" value="2025-04-30">
+                        </div>
+                        <div class="form-group">
+                            <label for="pickup-time">Giờ nhận xe</label>
+                            <input type="time" id="pickup-time" value="08:00">
+                        </div>
+                        <div class="form-group">
+                            <label for="return-date">Ngày trả xe</label>
+                            <input type="date" id="return-date" value="2025-05-01">
+                        </div>
+                        <div class="form-group">
+                            <label for="return-time">Giờ trả xe</label>
+                            <input type="time" id="return-time" value="00:00">
+                        </div>
+                        <button class="btn btn-primary">TÌM XE</button>
+                    </div>
+                </header>
+            </div>
+        </div>
+    </div>
+    <div class="content-car">
+        <section  class="sec-car">
+            <div class="renatal">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#car">XE HƠI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#moto">XE SỐ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#transport">XE TAY GA</a>
+                    </li>          
+                </ul>
+            </div>
+            <div class="cards">
+                <!-- Car card -->
+                <div class="car-card">
+                    <div class="car-image" id="car">
+                        <img src="../IMG/Car_moto-rental/Car/1.jpg" alt="VINFAST F3">
+                    </div>
+                    <div class="car-info">
+                        <div class="car-title">VINFAST F3</div>
+                        <div class="car-meta">Vị trí: Quận 3</div>
+                        <div class="car-meta">Thời gian thuê: 2 ngày 4 giờ</div>
+                        <div class="price">700.000đ/ngày <span class="old-price">800.000đ</span></div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="../IMG/Car_moto-rental/Car/2.jpg" alt="VINFAST F3">
+                    </div>
+                    <div class="car-info">
+                        <div class="car-title">BMW</div>
+                        <div class="car-meta">Vị trí: Quận 3</div>
+                        <div class="car-meta">Thời gian thuê: 2 ngày 4 giờ</div>
+                        <div class="price">700.000đ/ngày <span class="old-price">800.000đ</span></div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="../IMG/Car_moto-rental/Car/3.jpg" alt="VINFAST F3">
+                    </div>
+                    <div class="car-info">
+                        <div class="car-title">BMW</div>
+                        <div class="car-meta">Vị trí: Quận 3</div>
+                        <div class="car-meta">Thời gian thuê: 2 ngày 4 giờ</div>
+                        <div class="price">700.000đ/ngày <span class="old-price">800.000đ</span></div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="../IMG/Car_moto-rental/Car/4.jpeg" alt="VINFAST F3">
+                    </div>
+                    <div class="car-info">
+                        <div class="car-title">LEXUS</div>
+                        <div class="car-meta">Vị trí: Quận 3</div>
+                        <div class="car-meta">Thời gian thuê: 2 ngày 4 giờ</div>
+                        <div class="price">700.000đ/ngày <span class="old-price">800.000đ</span></div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="../IMG/Car_moto-rental/Car/5.jpg" alt="VINFAST F3">
+                    </div>
+                    <div class="car-info">
+                        <div class="car-title">LEXUS</div>
+                        <div class="car-meta">Vị trí: Quận 3</div>
+                        <div class="car-meta">Thời gian thuê: 2 ngày 4 giờ</div>
+                        <div class="price">700.000đ/ngày <span class="old-price">800.000đ</span></div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="../IMG/Car_moto-rental/Car/6.jpg" alt="VINFAST F3">
+                    </div>
+                    <div class="car-info">
+                        <div class="car-title">HYUNDAI</div>
+                        <div class="car-meta">Vị trí: Quận 3</div>
+                        <div class="car-meta">Thời gian thuê: 2 ngày 4 giờ</div>
+                        <div class="price">700.000đ/ngày <span class="old-price">800.000đ</span></div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="../IMG/Car_moto-rental/Car/7.jpg" alt="VINFAST F3">
+                    </div>
+                    <div class="car-info">
+                        <div class="car-title">HYUNDAI</div>
+                        <div class="car-meta">Vị trí: Quận 3</div>
+                        <div class="car-meta">Thời gian thuê: 2 ngày 4 giờ</div>
+                        <div class="price">700.000đ/ngày <span class="old-price">800.000đ</span></div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="../IMG/Car_moto-rental/Car/8.webp" alt="VINFAST F3">
+                    </div>
+                    <div class="car-info">
+                        <div class="car-title">VINFAST VF9</div>
+                        <div class="car-meta">Vị trí: Quận 3</div>
+                        <div class="car-meta">Thời gian thuê: 2 ngày 4 giờ</div>
+                        <div class="price">700.000đ/ngày <span class="old-price">800.000đ</span></div>
+                    </div>
+                </div>
+                <!-- moto card -->
+                <div class="car-card">
+                    <div class="car-image" id="moto">
+                        <img src="../IMG/Car_moto-rental/Moto/1.png" alt="VINFAST F3">
+                    </div>
+                    <div class="car-info">
+                        <div class="car-title">XE CÚP</div>
+                        <div class="car-meta">Vị trí: Quận 3</div>
+                        <div class="car-meta">Thời gian thuê: 2 ngày 4 giờ</div>
+                        <div class="price">700.000đ/ngày <span class="old-price">800.000đ</span></div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="../IMG/Car_moto-rental/Moto/2.jpg" alt="VINFAST F3">
+                    </div>
+                    <div class="car-info">
+                        <div class="car-title">XE CÚP</div>
+                        <div class="car-meta">Vị trí: Quận 3</div>
+                        <div class="car-meta">Thời gian thuê: 2 ngày 4 giờ</div>
+                        <div class="price">700.000đ/ngày <span class="old-price">800.000đ</span></div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="../IMG/Car_moto-rental/Moto/3.jpg" alt="VINFAST F3">
+                    </div>
+                    <div class="car-info">
+                        <div class="car-title">MOTO</div>
+                        <div class="car-meta">Vị trí: Quận 3</div>
+                        <div class="car-meta">Thời gian thuê: 2 ngày 4 giờ</div>
+                        <div class="price">700.000đ/ngày <span class="old-price">800.000đ</span></div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="../IMG/Car_moto-rental/Moto/4.jpg" alt="VINFAST F3">
+                    </div>
+                    <div class="car-info">
+                        <div class="car-title">MOTOMOTO</div>
+                        <div class="car-meta">Vị trí: Quận 3</div>
+                        <div class="car-meta">Thời gian thuê: 2 ngày 4 giờ</div>
+                        <div class="price">700.000đ/ngày <span class="old-price">800.000đ</span></div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="../IMG/Car_moto-rental/Moto/5.jpg" alt="VINFAST F3">
+                    </div>
+                    <div class="car-info">
+                        <div class="car-title">WAVE</div>
+                        <div class="car-meta">Vị trí: Quận 3</div>
+                        <div class="car-meta">Thời gian thuê: 2 ngày 4 giờ</div>
+                        <div class="price">700.000đ/ngày <span class="old-price">800.000đ</span></div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="../IMG/Car_moto-rental/Moto/6.jpg" alt="VINFAST F3">
+                    </div>
+                    <div class="car-info">
+                        <div class="car-title">WAVE</div>
+                        <div class="car-meta">Vị trí: Quận 3</div>
+                        <div class="car-meta">Thời gian thuê: 2 ngày 4 giờ</div>
+                        <div class="price">700.000đ/ngày <span class="old-price">800.000đ</span></div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="../IMG/Car_moto-rental/Moto/7.jpg" alt="VINFAST F3">
+                    </div>
+                    <div class="car-info">
+                        <div class="car-title">SIRIUS</div>
+                        <div class="car-meta">Vị trí: Quận 3</div>
+                        <div class="car-meta">Thời gian thuê: 2 ngày 4 giờ</div>
+                        <div class="price">700.000đ/ngày <span class="old-price">800.000đ</span></div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="../IMG/Car_moto-rental/Moto/8.jpg" alt="VINFAST F3">
+                    </div>
+                    <div class="car-info">
+                        <div class="car-title">SIRIUS</div>
+                        <div class="car-meta">Vị trí: Quận 3</div>
+                        <div class="car-meta">Thời gian thuê: 2 ngày 4 giờ</div>
+                        <div class="price">700.000đ/ngày <span class="old-price">800.000đ</span></div>
+                    </div>
+                </div>
+                <!-- Transport -->
+                <div class="car-card">
+                    <div class="car-image" id="transport">
+                        <img src="../IMG/Car_moto-rental/transport/1.jpg" alt="VINFAST F3">
+                    </div>
+                    <div class="car-info">
+                        <div class="car-title">XE CÚP</div>
+                        <div class="car-meta">Vị trí: Quận 3</div>
+                        <div class="car-meta">Thời gian thuê: 2 ngày 4 giờ</div>
+                        <div class="price">700.000đ/ngày <span class="old-price">800.000đ</span></div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="../IMG/Car_moto-rental/transport/2.webp" alt="VINFAST F3">
+                    </div>
+                    <div class="car-info">
+                        <div class="car-title">XE CÚP</div>
+                        <div class="car-meta">Vị trí: Quận 3</div>
+                        <div class="car-meta">Thời gian thuê: 2 ngày 4 giờ</div>
+                        <div class="price">700.000đ/ngày <span class="old-price">800.000đ</span></div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="../IMG/Car_moto-rental/transport/3.jpg" alt="VINFAST F3">
+                    </div>
+                    <div class="car-info">
+                        <div class="car-title">MOTO</div>
+                        <div class="car-meta">Vị trí: Quận 3</div>
+                        <div class="car-meta">Thời gian thuê: 2 ngày 4 giờ</div>
+                        <div class="price">700.000đ/ngày <span class="old-price">800.000đ</span></div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="../IMG/Car_moto-rental/transport/4.jpg" alt="VINFAST F3">
+                    </div>
+                    <div class="car-info">
+                        <div class="car-title">MOTOMOTO</div>
+                        <div class="car-meta">Vị trí: Quận 3</div>
+                        <div class="car-meta">Thời gian thuê: 2 ngày 4 giờ</div>
+                        <div class="price">700.000đ/ngày <span class="old-price">800.000đ</span></div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="../IMG/Car_moto-rental/transport/5.jpg" alt="VINFAST F3">
+                    </div>
+                    <div class="car-info">
+                        <div class="car-title">WAVE</div>
+                        <div class="car-meta">Vị trí: Quận 3</div>
+                        <div class="car-meta">Thời gian thuê: 2 ngày 4 giờ</div>
+                        <div class="price">700.000đ/ngày <span class="old-price">800.000đ</span></div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="../IMG/Car_moto-rental/transport/6.jpg" alt="VINFAST F3">
+                    </div>
+                    <div class="car-info">
+                        <div class="car-title">WAVE</div>
+                        <div class="car-meta">Vị trí: Quận 3</div>
+                        <div class="car-meta">Thời gian thuê: 2 ngày 4 giờ</div>
+                        <div class="price">700.000đ/ngày <span class="old-price">800.000đ</span></div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="../IMG/Car_moto-rental/Moto/7.jpg" alt="VINFAST F3">
+                    </div>
+                    <div class="car-info">
+                        <div class="car-title">SIRIUS</div>
+                        <div class="car-meta">Vị trí: Quận 3</div>
+                        <div class="car-meta">Thời gian thuê: 2 ngày 4 giờ</div>
+                        <div class="price">700.000đ/ngày <span class="old-price">800.000đ</span></div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="../IMG/Car_moto-rental/transport/8.jpg" alt="VINFAST F3">
+                    </div>
+                    <div class="car-info">
+                        <div class="car-title">SIRIUS</div>
+                        <div class="car-meta">Vị trí: Quận 3</div>
+                        <div class="car-meta">Thời gian thuê: 2 ngày 4 giờ</div>
+                        <div class="price">700.000đ/ngày <span class="old-price">800.000đ</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

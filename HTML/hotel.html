@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiết kế Web du lịch</title>
+    <link rel="stylesheet" href="../CSS/hotel.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet" /><link rel="stylesheet" href="../CSS/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+    <script src="../JS/global.js"></script>
+    <script src="../JS/ht.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="container-fluid" id="navbar">
+        <nav class="container-fluid d-flex justify-content-between align-items-center flex-wrap" id="navboss">
+            <div id="nav-left">
+                <ul class="d-flex flex-wrap gap-5 list-unstyled m-0 p-0">
+                    <li class="dropdown"><a href="./Homepage.html">Trang chủ</a></li>
+                    <li class="dropdown">
+                        <a href="./tourirst.html">Du lịch</a>
+                        <ul class="dropdown-content">
+                            <li><a href="./tour_heritage.html">Tour di tích</a></li>
+                            <li><a href="./tour_travel.html">Tour healing</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="./hotel.html">Khách sạn</a></li>
+                    <li class="dropdown"><a href="./car-rental.html">Thuê xe</a></li>
+                    <li class="dropdown">
+                        <a href="./fashion.html">Thời trang</a>
+                    </li>
+                    <!-- <li class="dropdown">
+                        <a href="./tools.html">Công cụ</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Balo</a></li>
+                            <li><a href="#">Phụ kiện</a></li>
+                        </ul>
+                    </li> -->
+                    <li class="dropdown"><a href="./pro5.html">Giới thiệu</a></li>
+                </ul>
+            </div>
+            <!-- <div id="nav-right">
+                <ul class="d-flex gap-3 list-unstyled m-0 p-0">
+                    <li><a href="#" class="register" onclick="showForm('registerForm')">Đăng kí</a></li>
+                    <li><a href="#" class="register" onclick="showForm('loginForm')">Đăng nhập</a></li>
+                </ul>
+            </div> -->
+        </nav>  
+    </div>
+    <div class="container-ht">
+        <aside class="left-ht">
+            <div class="search-box">
+                <h3>Tìm</h3>
+                <label for="destination">Tên chỗ nghỉ / điểm đến:</label>
+                <div class="input-icon">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="destination" placeholder="TP. Hồ Chí Minh">
+                </div>
+            
+                <label for="checkin">Ngày nhận phòng</label>
+                <div class="input-icon">
+                    <i class="fas fa-calendar-alt"></i>
+                    <input type="date" id="checkin">
+                </div>
+            
+                <label for="checkout">Ngày trả phòng</label>
+                <div class="input-icon">
+                    <i class="fas fa-calendar-alt"></i>
+                    <input type="date" id="checkout">
+                </div>
+            
+                <select>
+                    <option>2 người lớn · 0 trẻ em · 1 phòng</option>
+                    <option>1 người lớn · 0 trẻ em · 1 phòng</option>
+                    <option>2 người lớn · 1 trẻ em · 1 phòng</option>
+                    <option>3 người lớn · 2 trẻ em · 2 phòng</option>
+                </select>
+            
+                <div class="checkbox-group">
+                    <label><input type="checkbox"> Nhà & căn hộ nguyên căn ?</i></label>
+                    <label><input type="checkbox"> Tôi đi công tác ?</i></label>
+                </div>
+            
+                <button type="submit">Tìm</button>
+            </div>
+              
+        </aside>
+        <article class="right-ht">
+            <div class="tour-cards" id="tourContainer">
+                <!-- Trang 1 -->
+                    <!-- Tour 1 -->
+                    <div class="tour-card-wrapper" data-page="1">
+                        <div class="tour-card">
+                            <img src="../IMG/Hotelimg/LA Vela Saigon Hotel.jpg" alt="Tour Image">
+                            <div class="tour-content">
+                                <div class="rating">
+                                    <span class="stars">★★★★★</span> <span>(4.8)</span>
+                                </div>
+                                <h3>LA Vela Saigon Hotel</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                                <p><i class="fas fa-dollar-sign"></i> Giá: 550.000đ</p>
+                                <hr>
+                                <div class="details-row">
+                                    <p><i class="fas fa-clock"></i> 01 day</p>
+                                    <p><i class="fas fa-user"></i> 23</p>
+                                </div>
+                                <a href="https://www.klook.com/vi/hotels/detail/199252-la-vela-saigon-hotel/?spm=SearchResult.SearchResult_LIST&clickId=1b8a348bcb"
+                                    class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tour 2 -->
+                    <div class="tour-card-wrapper" data-page="1">
+                        <div class="tour-card">
+                            <img src="../IMG/Hotelimg/Eden.webp" alt="Tour Image">
+                            <div class="tour-content">
+                                <div class="rating">
+                                    <span class="stars">★★★★★</span> <span>(4.8)</span>
+                                </div>
+                                <h3>Eden Garden Hotel</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                                <p><i class="fas fa-dollar-sign"></i> Giá: 450.000đ</p>
+                                <hr>
+                                <div class="details-row">
+                                    <p><i class="fas fa-clock"></i> 01 day</p>
+                                    <p><i class="fas fa-user"></i> 25</p>
+                                </div>
+                                <a href="https://www.klook.com/vi/hotels/detail/316074-eden-garden-hotel/?spm=SearchResult.SearchResult_LIST&clickId=2b36648a2c"
+                                    class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tour 3 -->
+                    <div class="tour-card-wrapper" data-page="1">
+                        <div class="tour-card">
+                            <img src="../IMG/Hotelimg/Metropole Garden Luxury Suite.jpg" alt="Tour Image">
+                            <div class="tour-content">
+                                <div class="rating">
+                                    <span class="stars">★★★★★</span> <span>(4.8)</span>
+                                </div>
+                                <h3>Sitting on Boat<br>Spreading Her Arms</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                                <p><i class="fas fa-dollar-sign"></i> Giá: 1.950.000đ</p>
+                                <hr>
+                                <div class="details-row">
+                                    <p><i class="fas fa-clock"></i> 03 days</p>
+                                    <p><i class="fas fa-user"></i> 25</p>
+                                </div>
+                                <a href="https://www.booking.com/hotel/vn/home-house-thu-duc.vi.html?aid=1538013&label=vivn-edge-ntp-topsites-curate-ana&sid=201f16df8f4d9bdc1535a8d2a01905fb&dest_id=230&dest_type=country&dist=0&group_adults=2&group_children=0&hapos=10&hpos=10&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1747889389&srpvid=f460214fe9a2039e&type=total&ucfs=1&#hotelTmpl"
+                                    class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tour 4 -->
+                    <div class="tour-card-wrapper" data-page="1">
+                        <div class="tour-card">
+                            <img src="../IMG/Hotelimg/La Siesta Premium Saigon Central.jpg" alt="Tour Image">
+                            <div class="tour-content">
+                                <div class="rating">
+                                    <span class="stars">★★★★★</span> <span>(4.8)</span>
+                                </div>
+                                <h3>La Siesta Premium Saigon Central</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                                <p><i class="fas fa-dollar-sign"></i> Giá: 2.300.000đ</p>
+                                <hr>
+                                <div class="details-row">
+                                    <p><i class="fas fa-clock"></i> 03 days</p>
+                                    <p><i class="fas fa-user"></i> 25</p>
+                                </div>
+                                <a href="https://www.booking.com/hotel/vn/la-siesta-premium-saigon-central.vi.html?aid=1538013&label=vivn-edge-ntp-topsites-curate-ana&sid=201f16df8f4d9bdc1535a8d2a01905fb&dest_id=-3730078&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=6&hpos=6&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1747889214&srpvid=525221a4b35a0364&type=total&ucfs=1&activeTab=main"
+                                    class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tour 5 -->
+                    <div class="tour-card-wrapper" data-page="1">
+                        <div class="tour-card">
+                            <img src="../IMG/Hotelimg/Elite Landmark Plus Saigon Riverside.jpg" alt="Tour Image">
+                            <div class="tour-content">
+                                <div class="rating">
+                                    <span class="stars">★★★★★</span> <span>(4.8)</span>
+                                </div>
+                                <h3>Elite Landmark Plus Saigon Riverside</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                                <p><i class="fas fa-dollar-sign"></i> Giá: 2.200.000đ</p>
+                                <hr>
+                                <div class="details-row">
+                                    <p><i class="fas fa-clock"></i> 03 days</p>
+                                    <p><i class="fas fa-user"></i> 80</p>
+                                </div>
+                                <a href="https://www.booking.com/hotel/vn/elite-homes-saigon-riverside.vi.html?aid=1538013&label=vivn-edge-ntp-topsites-curate-ana&sid=201f16df8f4d9bdc1535a8d2a01905fb&dest_id=230&dest_type=country&dist=0&group_adults=2&group_children=0&hapos=4&hpos=4&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1747889049&srpvid=f460214fe9a2039e&type=total&ucfs=1&activeTab=main"
+                                    class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tour 6 -->
+                    <div class="tour-card-wrapper" data-page="1">
+                        <div class="tour-card">
+                            <img src="../IMG/Hotelimg/Aquari Hotel.webp" alt="Tour Image">
+                            <div class="tour-content">
+                                <div class="rating">
+                                    <span class="stars">★★★★★</span> <span>(4.8)</span>
+                                </div>
+                                <h3>Aquari Hotel</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                                <p><i class="fas fa-dollar-sign"></i> Giá: 1.120.000đ</p>
+                                <hr>
+                                <div class="details-row">
+                                    <p><i class="fas fa-clock"></i> 03 days</p>
+                                    <p><i class="fas fa-user"></i> 25</p>
+                                </div>
+                                <a href="https://www.klook.com/vi/hotels/detail/313355-aquari-hotel/?spm=SearchResult.SearchResult_LIST&clickId=0f58b5a064"
+                                    class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tour 7 -->
+                    <div class="tour-card-wrapper" data-page="1">
+                        <div class="tour-card">
+                            <img src="../IMG/Hotelimg/Bonita Signature Hotel.webp" alt="Tour Image">
+                            <div class="tour-content">
+                                <div class="rating">
+                                    <span class="stars">★★★★★</span> <span>(4.8)</span>
+                                </div>
+                                <h3>Bonita Signature Hotel</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                                <p><i class="fas fa-dollar-sign"></i> Giá: 1.500.000đ</p>
+                                <hr>
+                                <div class="details-row">
+                                    <p><i class="fas fa-clock"></i> 03 days</p>
+                                    <p><i class="fas fa-user"></i> 55</p>
+                                </div>
+                                <a href="https://www.klook.com/vi/hotels/detail/469081-bonita-signature-hotel/?spm=SearchResult.SearchResult_LIST&clickId=faefae05e8"
+                                    class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tour 8 -->
+                    <div class="tour-card-wrapper" data-page="1">
+                        <div class="tour-card">
+                            <img src="../IMG/Hotelimg/Sapa Centre Hotel.avif" alt="Tour Image" class="img-fluid">
+                            <div class="tour-content">
+                                <div class="rating"><span class="stars">★★★★★</span> <span>(4.8)</span></div>
+                                <h3>Sapa Centre Hotel</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                                <p><i class="fas fa-dollar-sign"></i> Giá: 516.000đ</p>
+                                <hr>
+                                <div class="details-row">
+                                    <p><i class="fas fa-clock"></i> 01 day</p>
+                                    <p><i class="fas fa-user"></i> 50</p>
+                                </div>
+                                <a href="https://www.klook.com/vi/hotels/detail/126941-sapa-centre-hotel/?spm=SearchResult.SearchResult_LIST&clickId=6a4f8e7ad7 "
+                                    class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                <!-- Trang 2 -->
+                    <!-- Tour 1 -->
+                    <div class="tour-card-wrapper" data-page="2">
+                        <div class="tour-card">
+                            <img src="../IMG/Hotelimg/Caly.jpg" alt="Tour Image">
+                            <div class="tour-content">
+                                <div class="rating">
+                                    <span class="stars">★★★★★</span> <span>(4.8)</span>
+                                </div>
+                                <h3>Caly homestay</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                                <p><i class="fas fa-dollar-sign"></i> Giá: 550.000đ</p>
+                                <hr>
+                                <div class="details-row">
+                                    <p><i class="fas fa-clock"></i> 01 day</p>
+                                    <p><i class="fas fa-user"></i> 23</p>
+                                </div>
+                                <a href="https://www.booking.com/searchresults.vi.html?label=msn-nCTeU2wWd4dwOumD6WFEIQ-80127101422552%3Atidat-2331926724017933%3Aloc-166%3Aneo%3Amtb%3Alp142897%3Adec%3Aqskh%C3%A1ch+s%E1%BA%A1n+homestay+vi%E1%BB%87t+nam&sid=201f16df8f4d9bdc1535a8d2a01905fb&aid=1181029&highlighted_hotels=4399691&nflt=sth%253D28&city=-3712045"
+                                    class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tour 2 -->
+                    <div class="tour-card-wrapper" data-page="2">
+                        <div class="tour-card">
+                            <img src="../IMG/Hotelimg/Nhasoihs.jpg" alt="Tour Image">
+                            <div class="tour-content">
+                                <div class="rating">
+                                    <span class="stars">★★★★★</span> <span>(4.8)</span>
+                                </div>
+                                <h3>Nhà Sói homestay</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                                <p><i class="fas fa-dollar-sign"></i> Giá: 450.000đ</p>
+                                <hr>
+                                <div class="details-row">
+                                    <p><i class="fas fa-clock"></i> 01 day</p>
+                                    <p><i class="fas fa-user"></i> 25</p>
+                                </div>
+                                <a href="https://www.booking.com/hotel/vn/sois-homestay.vi.html?aid=1181029&label=msn-nCTeU2wWd4dwOumD6WFEIQ-80127101422552%3Atidat-2331926724017933%3Aloc-166%3Aneo%3Amtb%3Alp142897%3Adec%3Aqskh%C3%A1ch%20s%E1%BA%A1n%20homestay%20vi%E1%BB%87t%20nam&sid=201f16df8f4d9bdc1535a8d2a01905fb&dest_id=-3712045&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=3&hpos=3&nflt=sth%3D28&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748245438&srpvid=a87e361b212402aa&type=total&ucfs=1&"
+                                    class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tour 3 -->
+                    <div class="tour-card-wrapper" data-page="2">
+                        <div class="tour-card">
+                            <img src="../IMG/Hotelimg/Rosee Villa - Green Villa with private Pool.jpg" alt="Tour Image">
+                            <div class="tour-content">
+                                <div class="rating">
+                                    <span class="stars">★★★★★</span> <span>(4.8)</span>
+                                </div>
+                                <h3>Rosee Villa - Green Villa with private Pool</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                                <p><i class="fas fa-dollar-sign"></i> Giá: 1.950.000đ</p>
+                                <hr>
+                                <div class="details-row">
+                                    <p><i class="fas fa-clock"></i> 03 days</p>
+                                    <p><i class="fas fa-user"></i> 25</p>
+                                </div>
+                                <a href="https://www.booking.com/hotel/vn/rosee-villa-flamigo.vi.html?aid=1181029&label=msn-nCTeU2wWd4dwOumD6WFEIQ-80127101422552%3Atidat-2331926724017933%3Aloc-166%3Aneo%3Amtb%3Alp142897%3Adec%3Aqskh%C3%A1ch%20s%E1%BA%A1n%20homestay%20vi%E1%BB%87t%20nam&sid=201f16df8f4d9bdc1535a8d2a01905fb&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748245821&srpvid=e19b371e4ec30bd0&type=total&ucfs=1&"
+                                    class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tour 4 -->
+                    <div class="tour-card-wrapper" data-page="2">
+                        <div class="tour-card">
+                            <img src="../IMG/Hotelimg/Ville De Mont Mountain Resort.jpg" alt="Tour Image">
+                            <div class="tour-content">
+                                <div class="rating">
+                                    <span class="stars">★★★★★</span> <span>(4.8)</span>
+                                </div>
+                                <h3>La Siesta Premium Saigon Central</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                                <p><i class="fas fa-dollar-sign"></i> Giá: 2.300.000đ</p>
+                                <hr>
+                                <div class="details-row">
+                                    <p><i class="fas fa-clock"></i> 03 days</p>
+                                    <p><i class="fas fa-user"></i> 25</p>
+                                </div>
+                                <a href="https://www.booking.com/hotel/vn/ville-de-mont-mountain-resort.vi.html?aid=1181029&label=msn-nCTeU2wWd4dwOumD6WFEIQ-80127101422552%3Atidat-2331926724017933%3Aloc-166%3Aneo%3Amtb%3Alp142897%3Adec%3Aqskh%C3%A1ch%20s%E1%BA%A1n%20homestay%20vi%E1%BB%87t%20nam&sid=201f16df8f4d9bdc1535a8d2a01905fb&dist=0&group_adults=2&group_children=0&hapos=5&hpos=5&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748245936&srpvid=e19b371e4ec30bd0&type=total&ucfs=1&"
+                                    class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tour 5 -->
+                    <div class="tour-card-wrapper" data-page="2">
+                        <div class="tour-card">
+                            <img src="../IMG/Hotelimg/TS Beach House.jpg" alt="Tour Image">
+                            <div class="tour-content">
+                                <div class="rating">
+                                    <span class="stars">★★★★★</span> <span>(4.8)</span>
+                                </div>
+                                <h3>TS Beach House</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                                <p><i class="fas fa-dollar-sign"></i> Giá: 2.200.000đ</p>
+                                <hr>
+                                <div class="details-row">
+                                    <p><i class="fas fa-clock"></i> 03 days</p>
+                                    <p><i class="fas fa-user"></i> 80</p>
+                                </div>
+                                <a href="https://www.booking.com/hotel/vn/ts-beach-house.vi.html?aid=1181029&label=msn-nCTeU2wWd4dwOumD6WFEIQ-80127101422552%3Atidat-2331926724017933%3Aloc-166%3Aneo%3Amtb%3Alp142897%3Adec%3Aqskh%C3%A1ch%20s%E1%BA%A1n%20homestay%20vi%E1%BB%87t%20nam&sid=201f16df8f4d9bdc1535a8d2a01905fb&dist=0&group_adults=2&group_children=0&hapos=3&hpos=3&nflt=ht_id%3D220%3Broomfacility%3D108&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748246091&srpvid=e19b371e4ec30bd0&type=total&ucfs=1&"
+                                    class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tour 6 -->
+                    <div class="tour-card-wrapper" data-page="2">
+                        <div class="tour-card">
+                            <img src="../IMG/Hotelimg/HA Gateway Inn Hoian Priavate Pool Villa.jpg" alt="Tour Image">
+                            <div class="tour-content">
+                                <div class="rating">
+                                    <span class="stars">★★★★★</span> <span>(4.8)</span>
+                                </div>
+                                <h3>HA Gateway Inn Hoian Priavate Pool Villa</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                                <p><i class="fas fa-dollar-sign"></i> Giá: 1.120.000đ</p>
+                                <hr>
+                                <div class="details-row">
+                                    <p><i class="fas fa-clock"></i> 03 days</p>
+                                    <p><i class="fas fa-user"></i> 25</p>
+                                </div>
+                                <a href="https://www.booking.com/hotel/vn/gateway-inn-hoi-an-villa.vi.html?aid=1181029&label=msn-nCTeU2wWd4dwOumD6WFEIQ-80127101422552%3Atidat-2331926724017933%3Aloc-166%3Aneo%3Amtb%3Alp142897%3Adec%3Aqskh%C3%A1ch%20s%E1%BA%A1n%20homestay%20vi%E1%BB%87t%20nam&sid=201f16df8f4d9bdc1535a8d2a01905fb&dest_id=-3715584&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=41&hpos=16&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748246207&srpvid=501f37db4e630438&type=total&ucfs=1&"
+                                    class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tour 7 -->
+                    <div class="tour-card-wrapper" data-page="2">
+                        <div class="tour-card">
+                            <img src="../IMG/Hotelimg/Ba Na Hills Sun World Family Home Villa.jpg" alt="Tour Image">
+                            <div class="tour-content">
+                                <div class="rating">
+                                    <span class="stars">★★★★★</span> <span>(4.8)</span>
+                                </div>
+                                <h3>Ba Na Hills Sun World Family Home Villa</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                                <p><i class="fas fa-dollar-sign"></i> Giá: 1.500.000đ</p>
+                                <hr>
+                                <div class="details-row">
+                                    <p><i class="fas fa-clock"></i> 03 days</p>
+                                    <p><i class="fas fa-user"></i> 55</p>
+                                </div>
+                                <a href="https://www.booking.com/hotel/vn/cho-o-tren-nui-cho-nguoi-yeu-bep.vi.html?aid=1181029&label=msn-nCTeU2wWd4dwOumD6WFEIQ-80127101422552%3Atidat-2331926724017933%3Aloc-166%3Aneo%3Amtb%3Alp142897%3Adec%3Aqskh%C3%A1ch%20s%E1%BA%A1n%20homestay%20vi%E1%BB%87t%20nam&sid=201f16df8f4d9bdc1535a8d2a01905fb&dist=0&group_adults=2&group_children=0&hapos=17&hpos=17&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748246041&srpvid=e19b371e4ec30bd0&type=total&ucfs=1&"
+                                    class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tour 8 -->
+                    <div class="tour-card-wrapper" data-page="2">
+                        <div class="tour-card">
+                            <img src="../IMG/Hotelimg/Hoi An Grace River Villa.jpg" alt="Tour Image" class="img-fluid">
+                            <div class="tour-content">
+                                <div class="rating"><span class="stars">★★★★★</span> <span>(4.8)</span></div>
+                                <h3>Hoi An Grace River Villa</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                                <p><i class="fas fa-dollar-sign"></i> Giá: 516.000đ</p>
+                                <hr>
+                                <div class="details-row">
+                                    <p><i class="fas fa-clock"></i> 01 day</p>
+                                    <p><i class="fas fa-user"></i> 50</p>
+                                </div>
+                                <a href="https://www.booking.com/hotel/vn/hoi-an-grace-river-villa.vi.html?aid=1181029&label=msn-nCTeU2wWd4dwOumD6WFEIQ-80127101422552%3Atidat-2331926724017933%3Aloc-166%3Aneo%3Amtb%3Alp142897%3Adec%3Aqskh%C3%A1ch%20s%E1%BA%A1n%20homestay%20vi%E1%BB%87t%20nam&sid=201f16df8f4d9bdc1535a8d2a01905fb&dist=0&group_adults=2&group_children=0&hapos=10&hpos=10&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748246031&srpvid=e19b371e4ec30bd0&type=total&ucfs=1& "
+                                    class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <ul class="pagination" id="pagination">
+                <li class="page-item"><a class="page-link" href="#" data-page="prev">Previous</a></li>
+                <li class="page-item"><a class="page-link active" href="#" data-page="1">1</a></li>
+                <li class="page-item"><a class="page-link" href="#" data-page="2">2</a></li>
+                <li class="page-item"><a class="page-link" href="#" data-page="next">Next</a></li>
+            </ul>
+        </article>
+    </div>
+    <!-- <script>
+        let currentPage = 1;
+
+        function showPage(page) {
+            const items = document.querySelectorAll('.tour-card-wrapper');
+            items.forEach(item => item.classList.remove('active'));
+
+            document.querySelectorAll('.page-link').forEach(link => link.classList.remove('active'));
+            document.querySelector(`[data-page="${page}"]`).classList.add('active');
+
+            const tourItems = document.querySelectorAll(`.tour-card-wrapper[data-page="${page}"]`);
+            tourItems.forEach(item => item.classList.add('active'));
+        }
+
+        document.getElementById('pagination').addEventListener('click', function (e) {
+            e.preventDefault();
+            const page = e.target.getAttribute('data-page');
+
+            if (page === 'prev' && currentPage > 1) {
+                currentPage--;
+            } else if (page === 'next' && currentPage < 2) {
+                currentPage++;
+            } else if (!isNaN(parseInt(page))) {
+                currentPage = parseInt(page);
+            }
+
+            showPage(currentPage);
+
+            // 👇 Thêm dòng này để tự động cuộn lên đầu trang
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Khởi tạo trang đầu tiên
+        showPage(currentPage);
+    </script> -->
+</body>
+</html>

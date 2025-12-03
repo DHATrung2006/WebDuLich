@@ -1,0 +1,1493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiết kế Web du lịch</title>
+    <link rel="stylesheet" href="../CSS/hotel.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../CSS/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/fashion.css">
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+    <script src="../JS/global.js"></script>
+    <script src="../JS/fs.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <script>
+        (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "VT0flOTOShCo2NB2DW9O-"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
+    </script>
+    <div class="container-fluid" id="navbar">
+        <nav class="container-fluid d-flex justify-content-between align-items-center flex-wrap" id="navboss">
+            <div id="nav-left">
+                <ul class="d-flex flex-wrap gap-5 list-unstyled m-0 p-0">
+                    <li class="dropdown"><a href="./Homepage.html">Trang chủ</a></li>
+                    <li class="dropdown">
+                        <a href="./tourirst.html">Du lịch</a>
+                        <ul class="dropdown-content">
+                            <li><a href="./tour_heritage.html">Tour di tích</a></li>
+                            <li><a href="./tour_travel.html">Tour healing</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="./hotel.html">Khách sạn</a></li>
+                    <li class="dropdown"><a href="./car-rental.html">Thuê xe</a></li>
+                    <li class="dropdown">
+                        <a href="./fashion.html">Thời trang</a>
+                    </li>
+                    <!-- <li class="dropdown">
+                        <a href="./tools.html">Công cụ</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Balo</a></li>
+                            <li><a href="#">Phụ kiện</a></li>
+                        </ul>
+                    </li> -->
+                    <li class="dropdown"><a href="./pro5.html">Giới thiệu</a></li>
+                </ul>
+            </div>
+            <!-- <div id="nav-right">
+                <ul class="d-flex gap-3 list-unstyled m-0 p-0">
+                    <li><a href="#" class="register" onclick="showForm('registerForm')">Đăng kí</a></li>
+                    <li><a href="#" class="register" onclick="showForm('loginForm')">Đăng nhập</a></li>
+                </ul>
+            </div> -->
+        </nav>
+    </div>
+    <div class="container-fs">
+        <article class="left-fs">
+            <div class="search-fs">
+                <div class="menu-f">
+                    <ul>
+                        <li class="highlight"><a href="#trouserss">Quần</a></li>
+                    </ul>
+                    <ul>
+                        <li class="highlight"><a href="#shirt">Áo</a></li>
+                    </ul>
+                </div>
+                <input type="search" placeholder="Tìm kiếm...">
+                <button type="submit"><img src="../ICON/search_icon.svg" alt="search_icon"></button>
+                <div class="menu-f">
+                    <ul>
+                        <li class="highlight"><a href="#jacket">Áo khoác</a></li>
+                    </ul>
+                    <ul>
+                        <li class="highlight"><a href="#dress">Đầm / Váy</a></li>
+                    </ul>
+                    <ul>
+                        <li class="highlight"><a href="#bikini">Bikini</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </article>
+        <div class="bg-right">
+            <img src="../IMG/Fashion/image.png" alt="backgroundImage">
+        </div>
+        <aside class="right-fs">
+            <div class="tour-cards" id="tourContainer">
+                <!-- Trang 1 -->
+                <!-- Tour 1 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="1">
+                    <div class="tour-card" id="shirt">
+                        <img src="../IMG/Fashion/shirt/1.webp" alt="Tour Image">
+                        <div class="tour-content">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span> <span>(4.8)</span>
+                            </div>
+                            <h3>T-Shirt</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 167.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 23</p>
+                            </div>
+                            <a href="https://shopee.vn/%C3%81o-thun-Boxy-TL-I-HATE-IT-260GSM-ch%E1%BA%A5t-li%E1%BB%87u-100-COTTON-M%C3%82%CC%83U-2-i.673978735.26704253886?sp_atk=6a503194-606a-4c68-9811-6013070af91a&xptdk=6a503194-606a-4c68-9811-6013070af91a"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 2 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="1">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/shirt/2.webp" alt="Tour Image">
+                        <div class="tour-content">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span> <span>(4.8)</span>
+                            </div>
+                            <h3>Baby tee</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 89.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 25</p>
+                            </div>
+                            <a href="https://shopee.vn/A%CC%81o-thun-c%C3%B4%CC%89-tro%CC%80n-tr%C6%A1n-nhu%CC%81m-eo-4-phong-ca%CC%81ch-Ha%CC%80n-Qu%C3%B4%CC%81c-CAMASTORE-M1421-i.399517032.24470201047?sp_atk=122ca4fd-6e30-4d2f-9715-48b2493b88f7&xptdk=122ca4fd-6e30-4d2f-9715-48b2493b88f7"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 3 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="1">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/shirt/3.webp" alt="Tour Image">
+                        <div class="tour-content">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span> <span>(4.8)</span>
+                            </div>
+                            <h3>Boxy tee</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 150.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 25</p>
+                            </div>
+                            <a href="https://shopee.vn/%C3%81o-Thun-Boxy-Tr%C6%A1n-Nam-N%E1%BB%AF-4LUCKY-6405-%C3%81o-Thun-Form-Boxy-C%E1%BB%95-Tr%C3%B2n-Local-Brand-Ch%C3%ADnh-H%C3%A3ng-Unisex-i.272367021.24271293255?sp_atk=eef53843-4eb7-4d70-acc8-27e2b3924278&xptdk=eef53843-4eb7-4d70-acc8-27e2b3924278"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 4 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="1">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/shirt/4.webp" alt="Tour Image">
+                        <div class="tour-content">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span> <span>(4.8)</span>
+                            </div>
+                            <h3>Sơ mi kẻ sọc</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 189.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 25</p>
+                            </div>
+                            <a href="https://shopee.vn/%C3%81o-S%C6%A1-Mi-K%E1%BA%BB-S%E1%BB%8Dc-L%E1%BB%A5a-M%E1%BB%81m-Form-R%E1%BB%99ng-Unisex-4Lucky-6813-S%C6%A1-Mi-Tay-D%C3%A0i-Nam-N%E1%BB%AF-Tr%E1%BA%BB-Trung-N%C4%83ng-%C4%90%E1%BB%99ng-i.272367021.24243688353?sp_atk=37ed5fc8-52b0-460a-a801-438423f53511&xptdk=37ed5fc8-52b0-460a-a801-438423f53511"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 5 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="1">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/shirt/5.webp" alt="Tour Image">
+                        <div class="tour-content">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span> <span>(4.8)</span>
+                            </div>
+                            <h3>Áo thun ôm body</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 189.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 80</p>
+                            </div>
+                            <a href="https://shopee.vn/-Zestiva-%C3%A1o-thun-tay-d%C3%A0i-%C3%A1o-thun-%C3%B4m-body-n%E1%BB%AF-tr%C6%A1n-basic-tr%E1%BB%85-vai-tay-d%C3%A0i-i.985065287.24488537747?sp_atk=a36709f0-f08f-41d2-9f5e-7864b0f379c1&xptdk=a36709f0-f08f-41d2-9f5e-7864b0f379c1"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 6 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="1">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/shirt/6.webp" alt="Tour Image">
+                        <div class="tour-content">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span> <span>(4.8)</span>
+                            </div>
+                            <h3>Áo Boxy</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 320.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 25</p>
+                            </div>
+                            <a href="https://shopee.vn/MIEMIE-%C3%81o-thun-nam-BRAND-phong-c%C3%A1ch-Unisex-from-Cotton-co-gi%C3%A3n-2-chi%E1%BB%81u-nam-n%E1%BB%AF-m%C3%A0u-tr%E1%BA%AFng-in-ch%E1%BB%AF-c%E1%BB%97-tr%C3%B2n-i.1415251624.26134891462?sp_atk=aaef8141-2a31-4215-9fc4-dfa263f6b05b&xptdk=aaef8141-2a31-4215-9fc4-dfa263f6b05b"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 7 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="1">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/shirt/7.webp" alt="Tour Image">
+                        <div class="tour-content">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span> <span>(4.8)</span>
+                            </div>
+                            <h3>Áo thun Oversize</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 189.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 55</p>
+                            </div>
+                            <a href="https://shopee.vn/%C3%81o-Thun-HY-KOREA-In-Ch%E1%BB%AF-Th%C6%B0%C6%A1ng-B%E1%BA%A1n-G%C3%A1i-Trai-Cotton-100-Co-gi%C3%A3n-2-Chi%E1%BB%81u-Phom-Unisex-Oversize-1517-i.447426521.20084070425?sp_atk=ddd803d5-7cd1-4442-aef3-171aa183ac4e&xptdk=ddd803d5-7cd1-4442-aef3-171aa183ac4e"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 8 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="1">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/shirt/8.webp" alt="Tour Image" class="img-fluid">
+                        <div class="tour-content">
+                            <div class="rating"><span class="stars">★★★★★</span> <span>(4.8)</span></div>
+                            <h3>Áo sơ mi Boxy</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 216.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 50</p>
+                            </div>
+                            <a href="https://shopee.vn/%C3%81o-S%C6%A1-Mi-Boxy-Lucky-777-INSOMNIA-Unisex-Local-Brand-TS031-i.636487248.27772829524?sp_atk=02f43a38-0557-45b8-b0bb-fe3a0f95e624&xptdk=02f43a38-0557-45b8-b0bb-fe3a0f95e624"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 9 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="1">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/shirt/9.webp" alt="Tour Image" class="img-fluid">
+                        <div class="tour-content">
+                            <div class="rating"><span class="stars">★★★★★</span> <span>(4.8)</span></div>
+                            <h3>Áo sơ mi polo</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 200.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 50</p>
+                            </div>
+                            <a href="https://shopee.vn/M%C3%B9a-h%C3%A8-M%E1%BB%B9-High-Street-D%E1%BB%87t-Kim-Ng%E1%BA%AFn-Tay-%C3%81o-S%C6%A1-Mi-POLO-Nam-Ve-%C3%81o-N%E1%BB%ADa-Tay-Top-Cao-C%E1%BA%A5p-Ruffian-%C4%90%E1%BA%B9p-Trai-%C3%81o-Chui-%C4%90%E1%BA%A7u-t--i.173455393.26954754279?sp_atk=2131b9fd-a703-404d-a144-5a1df52091cb&xptdk=2131b9fd-a703-404d-a144-5a1df52091cb"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 10 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="1">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/shirt/10.webp" alt="Tour Image" class="img-fluid">
+                        <div class="tour-content">
+                            <div class="rating"><span class="stars">★★★★★</span> <span>(4.8)</span></div>
+                            <h3>Áo làm vì đam mê</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 200.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 50</p>
+                            </div>
+                            <a href="https://shopee.vn/%C3%81o-thun-Local-Brand-Happy-Sunday-In-Ch%E1%BB%AF-%C4%90i-L%C3%A0m-V%C3%AC-%C4%90am-M%C3%AA-Tien-Form-R%E1%BB%99ng-Unisex-i.1148442375.25004648395?sp_atk=79f11fe8-d814-464f-bea3-222e9fa5ed75&xptdk=79f11fe8-d814-464f-bea3-222e9fa5ed75"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 11 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="1">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/shirt/11.webp" alt="Tour Image" class="img-fluid">
+                        <div class="tour-content">
+                            <div class="rating"><span class="stars">★★★★★</span> <span>(4.8)</span></div>
+                            <h3>Áo hết tiền</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 200.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 50</p>
+                            </div>
+                            <a href="https://shopee.vn/%C3%81o-Thun-Local-Brand-Teeworld-H%E1%BA%BFt-Ti%E1%BB%81n-T-Shirt-Nam-N%E1%BB%AF-Form-R%E1%BB%99ng-Unisex-i.225664151.20693964829?sp_atk=9f26af2b-3b6a-42ba-814a-2100a55622f3&xptdk=9f26af2b-3b6a-42ba-814a-2100a55622f3"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 12 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="1">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/shirt/12.webp" alt="Tour Image" class="img-fluid">
+                        <div class="tour-content">
+                            <div class="rating"><span class="stars">★★★★★</span> <span>(4.8)</span></div>
+                            <h3>Áo có lương...</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 200.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 50</p>
+                            </div>
+                            <a href="https://shopee.vn/%C3%81o-Thun-Local-Brand-Teeworld-In-Ch%E1%BB%AF-C%C3%B3-L%C6%B0%C6%A1ng-Nh%C6%B0ng-Kh%C3%B4ng-%C4%90%C3%A1ng-K%E1%BB%83-T-shirt-Nam-N%E1%BB%AF-Unisex-i.225664151.28002547897?sp_atk=0b76ccb5-8e5d-4810-a50b-60b307029857&xptdk=0b76ccb5-8e5d-4810-a50b-60b307029857"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            <!--  Trang 2 -->
+                <!-- Tour 1 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="2">
+                    <div class="tour-card" id="trouserss">
+                        <img src="../IMG/Fashion/trousers/1.webp" alt="Tour Image">
+                        <div class="tour-content">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span> <span>(4.8)</span>
+                            </div>
+                            <h3>Quần scimitar</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 229.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 23</p>
+                            </div>
+                            <a href="https://shopee.vn/Qu%E1%BA%A7n-nam-ZenithRose-th%E1%BB%9Di-trang-phong-c%C3%A1ch-H%C3%A0n-Qu%E1%BB%91c-ch%E1%BA%A5t-l%C6%B0%E1%BB%A3ng-cao-n%E1%BB%91i-thi%E1%BA%BFt-k%E1%BA%BF-qu%E1%BA%A7n-scimitar-i.881288297.26970531434?sp_atk=90cc4f1e-7299-43b6-bece-2742e64b2d46&xptdk=90cc4f1e-7299-43b6-bece-2742e64b2d46"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 2 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="2">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/trousers/2.webp" alt="Tour Image">
+                        <div class="tour-content">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span> <span>(4.8)</span>
+                            </div>
+                            <h3>Quần short Jean</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 189.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 25</p>
+                            </div>
+                            <a href="https://shopee.vn/Qu%E1%BA%A7n-short-jean-nam-n%E1%BB%AF-%E1%BB%91ng-r%E1%BB%99ng-JONATO-qu%E1%BA%A7n-ng%E1%BB%91-nam-ch%E1%BA%A5t-li%E1%BB%87u-Denim-tr%E1%BA%BB-trung-n%C4%83ng-%C4%91%E1%BB%99ng-J082-i.833640645.24743034382?sp_atk=1e9fd0b3-faa3-4826-b77f-889880a6420e&xptdk=1e9fd0b3-faa3-4826-b77f-889880a6420e"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 3 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="2">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/trousers/3.webp" alt="Tour Image">
+                        <div class="tour-content">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span> <span>(4.8)</span>
+                            </div>
+                            <h3>Quần Baggy ống rộng</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 200.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 25</p>
+                            </div>
+                            <a href="https://shopee.vn/Qu%E1%BA%A7n-baggy-%E1%BB%90ng-R%E1%BB%99ng-plus-size-m-8xl-Phong-C%C3%A1ch-H%C3%A0n-Qu%E1%BB%91c-Cho-Nam-i.716789409.21086124533?sp_atk=9c2d526a-b334-48a4-b9b7-dff78f86ce68&xptdk=9c2d526a-b334-48a4-b9b7-dff78f86ce68"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 4 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="2">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/trousers/4.webp" alt="Tour Image">
+                        <div class="tour-content">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span> <span>(4.8)</span>
+                            </div>
+                            <h3>Sơ mi kẻ sọc</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 198.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 25</p>
+                            </div>
+                            <a href="https://shopee.vn/%C3%81o-S%C6%A1-Mi-K%E1%BA%BB-S%E1%BB%8Dc-L%E1%BB%A5a-M%E1%BB%81m-Form-R%E1%BB%99ng-Unisex-4Lucky-6813-S%C6%A1-Mi-Tay-D%C3%A0i-Nam-N%E1%BB%AF-Tr%E1%BA%BB-Trung-N%C4%83ng-%C4%90%E1%BB%99ng-i.272367021.24243688353?sp_atk=37ed5fc8-52b0-460a-a801-438423f53511&xptdk=37ed5fc8-52b0-460a-a801-438423f53511"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 5 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="2">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/trousers/5.webp" alt="Tour Image">
+                        <div class="tour-content">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span> <span>(4.8)</span>
+                            </div>
+                            <h3>Quần nỉ ống suông</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 349.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 80</p>
+                            </div>
+                            <a href="https://shopee.vn/Qu%E1%BA%A7n-%E1%BB%91ng-r%E1%BB%99ng-nam-jogger-pants-%E1%BB%91ng-su%C3%B4ng-phong-c%C3%A1ch-h%C3%A0n-qu%E1%BB%91c-MK2390-i.231414309.26023610144?sp_atk=4a267c38-fb14-40e5-9209-acebbdf15d52&xptdk=4a267c38-fb14-40e5-9209-acebbdf15d52"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 6 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="2">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/trousers/6.webp" alt="Tour Image">
+                        <div class="tour-content">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span> <span>(4.8)</span>
+                            </div>
+                            <h3>Quần đùi nỉ</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 199.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 25</p>
+                            </div>
+                            <a href="https://shopee.vn/Qu%E1%BA%A7n-%C4%91%C3%B9i-short-basic-ClownZ-Wind-Breaker-Short-local-brand-unisex-t%C3%BAi-nam-n%E1%BB%AF-th%E1%BB%83-thao-form-r%E1%BB%99ng-i.144509299.26554326470?sp_atk=99ca71e0-57d4-4710-b24e-6d6cd2f8c62b&xptdk=99ca71e0-57d4-4710-b24e-6d6cd2f8c62b"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 7 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="2">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/trousers/7.webp" alt="Tour Image">
+                        <div class="tour-content">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span> <span>(4.8)</span>
+                            </div>
+                            <h3>Quần ống rộng vải xước</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 220.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 55</p>
+                            </div>
+                            <a href="https://shopee.vn/Qu%E1%BA%A7n-D%C3%A0i-%E1%BB%90ng-R%E1%BB%99ng-V%E1%BA%A3i-X%C6%B0%E1%BB%9Bc-NEWSEVEN-Wide-Leg-Pants-QD.433-i.257372007.29630393201?sp_atk=d41b47a8-75e2-4126-bb15-6b0de9dc5e11&xptdk=d41b47a8-75e2-4126-bb15-6b0de9dc5e11"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 8 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="2">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/trousers/8.webp" alt="Tour Image" class="img-fluid">
+                        <div class="tour-content">
+                            <div class="rating"><span class="stars">★★★★★</span> <span>(4.8)</span></div>
+                            <h3>Quần tây</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 169.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 50</p>
+                            </div>
+                            <a href="https://shopee.vn/Qu%E1%BA%A7n-T%C3%A2y-Nam-D%C3%A0i-Su%C3%B4ng-4LUCKY-6203-Qu%E1%BA%A7n-T%C3%A2y-%E1%BB%90ng-R%E1%BB%99ng-Th%E1%BB%9Di-Trang-Unisex-Nam-N%E1%BB%AF-L%C6%B0ng-Thun-Co-Gi%C3%A3n-Phong-C%C3%A1ch-H%C3%A0n-Qu%E1%BB%91c-i.272367021.23674959725?sp_atk=a3bb815a-5c73-43c7-8689-64bacd954bac&xptdk=a3bb815a-5c73-43c7-8689-64bacd954bac"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 9 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="2">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/trousers/9.webp" alt="Tour Image" class="img-fluid">
+                        <div class="tour-content">
+                            <div class="rating"><span class="stars">★★★★★</span> <span>(4.8)</span></div>
+                            <h3>Quần kẻ sọc</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 189.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 50</p>
+                            </div>
+                            <a href="https://shopee.vn/Qu%E1%BA%A7n-d%C3%A0i-K%E1%BA%BB-S%E1%BB%8Dc-%E1%BB%91ng-r%E1%BB%99ng-l%C6%B0ng-chun-d%C3%A2y-r%C3%BAt-v%E1%BA%A3i-kate-form-su%C3%B4ng-m%C3%A0u-%C4%91en-V2-FAFIC-STUDIO-i.841424922.29551596146?sp_atk=23916b82-6ef8-4823-b36e-e7eb338a7e9c&xptdk=23916b82-6ef8-4823-b36e-e7eb338a7e9c"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 10 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="2">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/trousers/10.webp" alt="Tour Image" class="img-fluid">
+                        <div class="tour-content">
+                            <div class="rating"><span class="stars">★★★★★</span> <span>(4.8)</span></div>
+                            <h3>Quần ống suông</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 239.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 50</p>
+                            </div>
+                            <a href="https://shopee.vn/Qu%E1%BA%A7n-%E1%BB%90ng-R%E1%BB%99ng-N%E1%BB%AF-T%C3%B4n-Eo-Hack-D%C3%A1ng-Che-M%E1%BB%8Di-Khuy%E1%BA%BFt-%C4%90i%E1%BB%83m-Qu%E1%BA%A7n-Paracute-Nam-N%E1%BB%AF-M%E1%BA%ABu-M%E1%BB%9Bi-Phong-C%C3%A1ch-H%C3%A0n-Qu%E1%BB%91c-i.58403918.29325267771?sp_atk=4a529277-fea9-46d2-8e00-75f55e950371&xptdk=4a529277-fea9-46d2-8e00-75f55e950371"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 11 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="2">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/trousers/11.webp" alt="Tour Image" class="img-fluid">
+                        <div class="tour-content">
+                            <div class="rating"><span class="stars">★★★★★</span> <span>(4.8)</span></div>
+                            <h3>Quần short jean</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 219.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 50</p>
+                            </div>
+                            <a href="https://shopee.vn/Qu%E1%BA%A7n-Short-Jean-T%C3%BAi-H%E1%BB%99p-Ph%E1%BB%91i-D%C3%A2y-Vi%E1%BB%81n-Ch%E1%BB%89-N%E1%BB%95i-Form-R%E1%BB%99ng-Tr%C3%AAn-G%E1%BB%91i-Mr.Smile-99-Shop-QN040-Nam-Menswear-i.27681309.25432284856?sp_atk=92a33e2e-3575-45f8-87a1-e5006a349a87&xptdk=92a33e2e-3575-45f8-87a1-e5006a349a87"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 12 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="2">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/trousers/12.webp" alt="Tour Image" class="img-fluid">
+                        <div class="tour-content">
+                            <div class="rating"><span class="stars">★★★★★</span> <span>(4.8)</span></div>
+                            <h3>Quần chất</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 300.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 50</p>
+                            </div>
+                            <a href="https://shopee.vn/Bad-Choices-Qu%E1%BA%A7n-d%C3%A0i-Kaki-%E1%BB%91ng-r%E1%BB%99ng-ho%E1%BA%A1-ti%E1%BA%BFt-Realtree-StreetStyle-i.822641583.26129935056?sp_atk=18b5e8dc-8595-4f68-b484-d5ba16a1c0ec&xptdk=18b5e8dc-8595-4f68-b484-d5ba16a1c0ec"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--  Trang 3 -->
+                <!-- Tour 1 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="3">
+                    <div class="tour-card" id="dress">
+                        <img src="../IMG/Fashion/dress/1.webp" alt="Tour Image">
+                        <div class="tour-content">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span> <span>(4.8)</span>
+                            </div>
+                            <h3>Váy xòe</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 230.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 23</p>
+                            </div>
+                            <a href="https://shopee.vn/V%C3%A1y-X%C3%B2e-Ng%E1%BA%AFn-Ti%E1%BB%83u-Th%C6%B0-T%C3%B9ng-Ph%E1%BB%93ng-Ph%E1%BB%91i-Ren-Baby-Lolita-HaLuuStore-HH89-i.17672646.27663875313?sp_atk=661f5554-7586-4f69-95a9-5f6a678f8de1&xptdk=661f5554-7586-4f69-95a9-5f6a678f8de1"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 2 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="3">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/dress/2.webp" alt="Tour Image">
+                        <div class="tour-content">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span> <span>(4.8)</span>
+                            </div>
+                            <h3>Váy 2 dây</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 199.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 25</p>
+                            </div>
+                            <a href="https://shopee.vn/(C%C3%93-BIGSIZE)-V%C3%A1y-2-d%C3%A2y-x%C3%B2e-%C4%90%E1%BA%A7m-2-d%C3%A2y-LENA-d%C3%A1ng-x%C3%B2e-d%E1%BA%A1o-ph%E1%BB%91-tr%E1%BA%BB-trung-3139-i.376343886.29233606622?sp_atk=cbf7b151-b8ff-41a7-a71e-e79799ba2c26&xptdk=cbf7b151-b8ff-41a7-a71e-e79799ba2c26"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 3 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="3">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/dress/3.webp" alt="Tour Image">
+                        <div class="tour-content">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span> <span>(4.8)</span>
+                            </div>
+                            <h3>Đầm bí trễ vai</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 205.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 25</p>
+                            </div>
+                            <a href="https://shopee.vn/Bella-Mini-Dress-%C4%90%E1%BA%A7m-b%C3%AD-tr%E1%BB%85-vai-tay-ph%E1%BB%93ng-nh%C3%BAn-thun-GLORIOUS-ch%E1%BA%A5t-li%E1%BB%87u-%C4%91%C5%A9i-v%C3%A2n-m%C3%A2y-h%E1%BA%A1n-ch%E1%BA%BF-nh%C4%83n-t%C3%B4n-d%C3%A1ng-i.1027721748.25892013886?sp_atk=41c1f526-c9a6-4691-8eac-ae0cf3b76705&xptdk=41c1f526-c9a6-4691-8eac-ae0cf3b76705"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 4 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="3">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/dress/4.webp" alt="Tour Image">
+                        <div class="tour-content">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span> <span>(4.8)</span>
+                            </div>
+                            <h3>BabyDoll cổ tròn</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 310.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 25</p>
+                            </div>
+                            <a href="https://shopee.vn/%C3%81o-Babydoll-C%E1%BB%95-Tr%C3%B2n-Hoa-Th%C3%AAu-BERI-i.825738483.25678448477?sp_atk=89ca26dc-1ef7-498c-b81f-10c62edf64a6&xptdk=89ca26dc-1ef7-498c-b81f-10c62edf64a6"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 5 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="3">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/dress/5.webp" alt="Tour Image">
+                        <div class="tour-content">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span> <span>(4.8)</span>
+                            </div>
+                            <h3>BabyDoll tay tròn</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 249.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 80</p>
+                            </div>
+                            <a href="https://shopee.vn/%C3%81o-babydoll-linen-ki%E1%BB%83u-xinh-tay-ph%E1%BB%93ng-ti%E1%BB%83u-th%C6%B0-c%C3%B4ng-ch%C3%BAa-bo-th%C3%A2n-n%C6%A1-coquette-ng%E1%BB%B1c-xinh-x%E1%BA%AFn-L%C3%82M-ANH-TR%E1%BA%A6N-MA329-i.1407967012.28881734097?sp_atk=776fedd2-5706-4daf-b84a-71b4016bf240&xptdk=776fedd2-5706-4daf-b84a-71b4016bf240"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 6 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="3">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/dress/6.webp" alt="Tour Image">
+                        <div class="tour-content">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span> <span>(4.8)</span>
+                            </div>
+                            <h3>Váy tiểu thư</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 300.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 25</p>
+                            </div>
+                            <a href="https://shopee.vn/V%C3%A1y-Ti%E1%BB%83u-Th%C6%B0-Tay-B%E1%BB%93ng-Th%E1%BA%AFt-Eo-%C4%90%E1%BA%A7m-D%E1%BB%B1-Ti%E1%BB%87c-D%C3%A1ng-Ch%E1%BB%AF-A-Sinh-Nh%E1%BA%ADt-ti%E1%BB%87c-c%C6%B0%E1%BB%9Bi-TLV3-Thi%C3%AAn-L%C3%BD-Fashion-i.1008687540.16695765306?sp_atk=6b2f9605-d113-4b57-a7ad-1050ef76c19b&xptdk=6b2f9605-d113-4b57-a7ad-1050ef76c19b"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 7 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="3">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/dress/7.webp" alt="Tour Image">
+                        <div class="tour-content">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span> <span>(4.8)</span>
+                            </div>
+                            <h3>Váy Mina</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 289.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 55</p>
+                            </div>
+                            <a href="https://shopee.vn/(DEAL-M%E1%BB%9E-B%C3%81N)-MINA-DRESS-V%C3%A1y-h%C3%A8-th%C3%AAu-n%C6%A1-tay-b%E1%BB%93ng-th%E1%BA%AFt-n%C6%A1-%C4%91i%E1%BB%87u-cho-n%E1%BB%AF-MadebyFairy-i.38981074.26483721125?sp_atk=786603d7-96c2-45d3-8819-89a4be376c17&xptdk=786603d7-96c2-45d3-8819-89a4be376c17"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 8 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="3">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/dress/8.webp" alt="Tour Image" class="img-fluid">
+                        <div class="tour-content">
+                            <div class="rating"><span class="stars">★★★★★</span> <span>(4.8)</span></div>
+                            <h3>Váy hoa</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 256.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 50</p>
+                            </div>
+                            <a href="https://shopee.vn/V%C3%A1y-T%C3%B9ng-X%C3%B2e-Ti%E1%BB%83u-Th%C6%B0-Hoa-Lavender-NV744-V%C3%A1y-B%E1%BB%93ng-X%C3%B2e-Form-Corset-M%E1%BA%ABn-Ti%C3%AAn-i.623292388.25992410883?sp_atk=c4ccf7c5-97e9-4aa3-a2de-856b49602e81&xptdk=c4ccf7c5-97e9-4aa3-a2de-856b49602e81"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 9 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="3">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/dress/9.webp" alt="Tour Image" class="img-fluid">
+                        <div class="tour-content">
+                            <div class="rating"><span class="stars">★★★★★</span> <span>(4.8)</span></div>
+                            <h3>Váy ngủ</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 260.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 50</p>
+                            </div>
+                            <a href="https://shopee.vn/-H%E1%BB%8Fa-T%E1%BB%91c-B%E1%BA%A3o-M%E1%BA%ADt-V%C3%A1y-Ng%E1%BB%A7-Sexy-G%E1%BB%A3i-C%E1%BA%A3m-%C4%90%E1%BA%A7m-Ng%E1%BB%A7-L%E1%BB%A5a-2-D%C3%A2y-Ph%E1%BB%91i-Ren-X%E1%BA%BB-T%C3%A0-Quy%E1%BA%BFn-R%C5%A9-Cao-C%E1%BA%A5p-M%C3%A3-VN013-i.679624465.17306972492?sp_atk=9f282c9f-38d3-4b80-be84-3ead86239c2c&xptdk=9f282c9f-38d3-4b80-be84-3ead86239c2c"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 10 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="3">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/dress/10.webp" alt="Tour Image" class="img-fluid">
+                        <div class="tour-content">
+                            <div class="rating"><span class="stars">★★★★★</span> <span>(4.8)</span></div>
+                            <h3>Váy trễ vai</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 216.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 50</p>
+                            </div>
+                            <a href="https://shopee.vn/-H%E1%BB%8Fa-T%E1%BB%91c-B%E1%BA%A3o-M%E1%BA%ADt-V%C3%A1y-Ng%E1%BB%A7-Sexy-G%E1%BB%A3i-C%E1%BA%A3m-%C4%90%E1%BA%A7m-Ng%E1%BB%A7-L%E1%BB%A5a-2-D%C3%A2y-Ph%E1%BB%91i-Ren-X%E1%BA%BB-T%C3%A0-Quy%E1%BA%BFn-R%C5%A9-Cao-C%E1%BA%A5p-M%C3%A3-VN013-i.679624465.17306972492?sp_atk=9f282c9f-38d3-4b80-be84-3ead86239c2c&xptdk=9f282c9f-38d3-4b80-be84-3ead86239c2c"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 11 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="3">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/dress/11.webp" alt="Tour Image" class="img-fluid">
+                        <div class="tour-content">
+                            <div class="rating"><span class="stars">★★★★★</span> <span>(4.8)</span></div>
+                            <h3>Váy hai dây viên ren</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 216.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 50</p>
+                            </div>
+                            <a href="https://shopee.vn/-VIDEO-S%E1%BA%AEN-V%C3%81Y-HAI-D%C3%82Y-VI%E1%BB%80N-REN-%C4%90%C3%8DNH-TH%E1%BA%AET-N%C6%A0-B%E1%BB%92NG-XO%C3%88-SI%C3%8AU-XINH-V36-i.114771968.28383137078?sp_atk=2242bd60-d920-4fce-80b2-44539e5868ae&xptdk=2242bd60-d920-4fce-80b2-44539e5868ae"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 12 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="3">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/dress/12.webp" alt="Tour Image" class="img-fluid">
+                        <div class="tour-content">
+                            <div class="rating"><span class="stars">★★★★★</span> <span>(4.8)</span></div>
+                            <h3>Đầm body</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 116.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 50</p>
+                            </div>
+                            <a href="https://shopee.vn/PQ20-V%C3%A1y-%C3%B4m-body-c%E1%BB%95-vu%C3%B4ng-c%E1%BB%99c-tay-ch%E1%BA%A5t-bozip-co-gi%C3%A3n-t%E1%BB%91t-phong-c%C3%A1ch-H%C3%A0n-Qu%E1%BB%91c-42-60kg-i.1129388521.27325187246?sp_atk=db620905-0191-4783-af88-22716c30ba4d&xptdk=db620905-0191-4783-af88-22716c30ba4d"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Trang 4 -->
+                <!-- Tour 1 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="4">
+                    <div class="tour-card" id="jacket">
+                        <img src="../IMG/Fashion/Jacket/1.webp" alt="Tour Image">
+                        <div class="tour-content">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span> <span>(4.8)</span>
+                            </div>
+                            <h3>Hoodie Zip boxy</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 208.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 23</p>
+                            </div>
+                            <a href="https://shopee.vn/%C3%81o-Kho%C3%A1c-Hoodie-Zip-Form-Boxy-Amadus-Th%C3%AAu-%C4%90%E1%BA%AFp-M%C3%A0u-Nam-N%E1%BB%AF-Tay-Ph%E1%BB%93ng-2025-i.863090178.25826987377?sp_atk=2d41d73d-f2ab-4ce9-9d66-2c095aa754cd&xptdk=2d41d73d-f2ab-4ce9-9d66-2c095aa754cd"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 2 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="4">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/Jacket/2.webp" alt="Tour Image">
+                        <div class="tour-content">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span> <span>(4.8)</span>
+                            </div>
+                            <h3>Hoodie zip</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 369.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 25</p>
+                            </div>
+                            <a href="https://shopee.vn/Hoodie-Zip-Form-Boxy-GODMOTHER-N%E1%BB%89-2-Da-Kh%C3%B3a-Nh%C3%B4m-2-%C4%90%E1%BA%A7u-Ch%E1%BB%91ng-N%E1%BA%AFng-Unisex-Phong-C%C3%A1ch-H%C3%A0n-Qu%E1%BB%91c-%C4%90en-X%C3%A1m-i.703090265.24083901807?sp_atk=cb9def8e-1625-4442-8376-fb0f7d5a27b8&xptdk=cb9def8e-1625-4442-8376-fb0f7d5a27b8"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 3 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="4">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/Jacket/3.webp" alt="Tour Image">
+                        <div class="tour-content">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span> <span>(4.8)</span>
+                            </div>
+                            <h3>Hoodie zip nỉ cổ cao</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 221.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 25</p>
+                            </div>
+                            <a href="https://shopee.vn/%C3%81o-Hoodie-zip-N%E1%BB%89-K%C3%A9o-C%E1%BB%95-Cao-YC1996-%C3%A1o-kho%C3%A1c-d%C3%A2y-k%C3%A9o-c%E1%BB%95-cao-th%C3%AAu-ng%E1%BB%B1c-i.1243389456.28101409734?sp_atk=b48794d7-84db-4524-bc14-ea06d69f75b2&xptdk=b48794d7-84db-4524-bc14-ea06d69f75b2"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 4 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="4">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/Jacket/4.webp" alt="Tour Image">
+                        <div class="tour-content">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span> <span>(4.8)</span>
+                            </div>
+                            <h3>Áo khoác Bomber</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 189.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 25</p>
+                            </div>
+                            <a href="https://shopee.vn/%C3%81o-kho%C3%A1c-BOMBER-n%E1%BB%89-2-da-JULIDO-%C3%A1o-kho%C3%A1c-n%E1%BB%89-logo-M-th%C3%AAu-n%E1%BB%95i-d%C3%A0y-d%E1%BA%B7n-(FORM-BOXY)-i.33435563.26319445803?sp_atk=c4f72f52-a2b4-46a7-acc5-b7a8d13bfd60&xptdk=c4f72f52-a2b4-46a7-acc5-b7a8d13bfd60"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 5 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="4">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/Jacket/5.webp" alt="Tour Image">
+                        <div class="tour-content">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span> <span>(4.8)</span>
+                            </div>
+                            <h3>Sweater cổ lọ</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 349.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 80</p>
+                            </div>
+                            <a href="https://shopee.vn/%C3%81o-Sweater-C%E1%BB%95-L%E1%BB%8D-GODMOTHER-V%E1%BA%A3i-N%E1%BB%89-2-Da-C%C3%B3-Kho%C3%A1-C%E1%BB%95-Tay-D%C3%A0i-Form-R%E1%BB%99ng-Unisex-Menswear-Phong-C%C3%A1ch-H%C3%A0n-Qu%E1%BB%91c-N%C4%83ng-%C4%90%E1%BB%99ng-i.703090265.26306184023?sp_atk=f851c3e0-0b14-40dc-ae15-ac4528df27ea&xptdk=f851c3e0-0b14-40dc-ae15-ac4528df27ea"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 6 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="4">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/Jacket/6.webp" alt="Tour Image">
+                        <div class="tour-content">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span> <span>(4.8)</span>
+                            </div>
+                            <h3>Áo khoác jean</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 349.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 25</p>
+                            </div>
+                            <a href="https://shopee.vn/%C3%81o-Kho%C3%A1c-Jean-Jacket-GODMOTHER-390gsm-Form-R%E1%BB%99ng-%C3%81o-Kho%C3%A1c-Jacket-Denim-C%E1%BB%95-T%C3%A0u-Basic-Ph%E1%BB%91i-Kho%C3%A1-K%C3%A9o-Ng%E1%BB%B1c-Menswear-i.703090265.29712479861?sp_atk=8fbe1561-f9b4-4097-b8b6-5a686343acbc&xptdk=8fbe1561-f9b4-4097-b8b6-5a686343acbc"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 7 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="4">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/Jacket/7.webp" alt="Tour Image">
+                        <div class="tour-content">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span> <span>(4.8)</span>
+                            </div>
+                            <h3>Áo khoác gió</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 269.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 55</p>
+                            </div>
+                            <a href="https://shopee.vn/%C3%81o-Kho%C3%A1c-Gi%C3%B3-GODMOTHER-%C3%81o-Jacket-2-L%E1%BB%9Bp-Nam-N%E1%BB%AF-Phong-C%C3%A1ch-Th%E1%BB%83-Thao-N%C4%83ng-%C4%90%E1%BB%99ng-i.703090265.19192525053?sp_atk=bb259694-59a8-4b76-8eaa-b6e9a0ffa071&xptdk=bb259694-59a8-4b76-8eaa-b6e9a0ffa071"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 8 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="4">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/Jacket/8.webp" alt="Tour Image" class="img-fluid">
+                        <div class="tour-content">
+                            <div class="rating"><span class="stars">★★★★★</span> <span>(4.8)</span></div>
+                            <h3>Sweater</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 197.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 50</p>
+                            </div>
+                            <a href="https://shopee.vn/-DEAL-M%E1%BB%9E-B%C3%81N-AB-HOUSE-%C3%81o-sweater-25-TWENTY-FIVE-form-r%E1%BB%99ng-Boxy-nam-n%E1%BB%AF-T%E1%BA%BFt-%E1%BA%A4m-Project-A-i.81184070.27862033050?sp_atk=f0e681e3-cc30-483a-b6aa-bdd9283b03a7&xptdk=f0e681e3-cc30-483a-b6aa-bdd9283b03a7"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 9 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="4">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/Jacket/9.webp" alt="Tour Image" class="img-fluid">
+                        <div class="tour-content">
+                            <div class="rating"><span class="stars">★★★★★</span> <span>(4.8)</span></div>
+                            <h3>Áo khoác jean</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 325.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 50</p>
+                            </div>
+                            <a href="https://shopee.vn/%C3%81o-Kho%C3%A1c-Jean-Nam-4LUCKY-6132-%C3%81o-Jean-Nam-N%E1%BB%AF-Form-Boxy-M%C3%A0u-Indigo-i.272367021.22534708220?sp_atk=39ab2c7e-af29-4d16-8b81-bf4734d81928&xptdk=39ab2c7e-af29-4d16-8b81-bf4734d81928"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 10 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="4">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/Jacket/10.webp" alt="Tour Image" class="img-fluid">
+                        <div class="tour-content">
+                            <div class="rating"><span class="stars">★★★★★</span> <span>(4.8)</span></div>
+                            <h3>Áo khoác dù</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 459.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 50</p>
+                            </div>
+                            <a href="https://shopee.vn/%C3%81o-kho%C3%A1c-MMXXIV-JACKET-HIGH-CLUB-m%C3%A0u-%C4%91%E1%BB%8F-Bordeaux-UNISEX-i.144534504.25077798843?sp_atk=1285533e-08a1-4e20-8789-dc2d4a688677&xptdk=1285533e-08a1-4e20-8789-dc2d4a688677"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 11 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="4">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/Jacket/11.webp" alt="Tour Image" class="img-fluid">
+                        <div class="tour-content">
+                            <div class="rating"><span class="stars">★★★★★</span> <span>(4.8)</span></div>
+                            <h3>Áo hkhoác boxy</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 246.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 50</p>
+                            </div>
+                            <a href="https://shopee.vn/%C3%81o-Kho%C3%A1c-Jacket-%E2%9A%A1%EF%B8%8FREDFLAG%E2%9A%A1%EF%B8%8F-Boxy-NG%E1%BA%AEN-c%E1%BB%95-tr%E1%BB%A5-v%E1%BA%A3i-Pcgen-l%C3%B3t-l%C6%B0%E1%BB%9Bi-Form-r%E1%BB%99ng-Unisex-Brand-Jaystoree-%F0%9F%96%A4-i.27228264.29429320712?sp_atk=46aa50fd-e40a-49ec-9dce-721719783d7c&xptdk=46aa50fd-e40a-49ec-9dce-721719783d7c"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 12 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="4">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/Jacket/12.webp" alt="Tour Image" class="img-fluid">
+                        <div class="tour-content">
+                            <div class="rating"><span class="stars">★★★★★</span> <span>(4.8)</span></div>
+                            <h3>Áo khoác kaki</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 339.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 50</p>
+                            </div>
+                            <a href="https://shopee.vn/%C3%81o-Kho%C3%A1c-Kaki-C%C3%B3-C%C3%BAc-GODMOTHER-Kaki-Jacket-Form-Crop-L%E1%BB%ADng-Nam-N%E1%BB%AF-C%E1%BB%95-B%E1%BA%BB-Phong-C%C3%A1ch-Thanh-L%E1%BB%8Bch-Tho%E1%BA%A3i-M%C3%A1i-Menswear-i.703090265.29007772215?sp_atk=2c24e996-f809-4223-83e6-646753c35f5f&xptdk=2c24e996-f809-4223-83e6-646753c35f5f"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Trang 5 -->
+                <!-- Tour 1 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="5">
+                    <div class="tour-card" id="bikini">
+                        <img src="../IMG/Fashion/Bikini/1.webp" alt="Tour Image">
+                        <div class="tour-content">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span> <span>(4.8)</span>
+                            </div>
+                            <h3>Bikini LuHaZo</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 167.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 23</p>
+                            </div>
+                            <a href="https://shopee.vn/Bikini-LUHAZO-%C4%91i-bi%E1%BB%83n-du-l%E1%BB%8Bch-3-chi-ti%E1%BA%BFt-n%E1%BB%AF-%C3%A1o-r%C3%BAt-d%C3%A2y-c%C3%B3-m%C3%BAt-ng%E1%BB%B1c-k%C3%A8m-qu%E1%BA%A7n-nh%C3%BAn-v%C3%A0-%C3%A1o-l%C6%B0%E1%BB%9Bi-k%C3%ADn-%C4%91%C3%A1o-9961-TK13T4-i.780327842.22044155716?sp_atk=ce4d593c-7d5f-410e-899d-e8865bc288ef&xptdk=ce4d593c-7d5f-410e-899d-e8865bc288ef"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 2 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="5">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/Bikini/2.webp" alt="Tour Image">
+                        <div class="tour-content">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span> <span>(4.8)</span>
+                            </div>
+                            <h3>Bikini thun lạnh</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 239.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 25</p>
+                            </div>
+                            <a href="https://shopee.vn/(49)-Set-Bikini-cao-c%E1%BA%A5p-3-m%E1%BA%A3nh-t%C3%B4n-d%C3%A1ng-%C4%91%E1%BB%A7-m%C3%A0u-%C4%91%E1%BB%A7-size-%C4%91i-bi%E1%BB%83n-%C4%91i-du-l%E1%BB%8Bch-ch%E1%BA%A5t-li%E1%BB%87u-thun-l%E1%BA%A1nh-co-gi%C3%A3n-tho%E1%BA%A3i-m%C3%A1i-i.138886798.19821835974?sp_atk=6daeb09f-6c44-4f0c-94a0-b537d7fee837&xptdk=6daeb09f-6c44-4f0c-94a0-b537d7fee837"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 3 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="5">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/Bikini/3.webp" alt="Tour Image">
+                        <div class="tour-content">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span> <span>(4.8)</span>
+                            </div>
+                            <h3>Quần lót boxy</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 297.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 25</p>
+                            </div>
+                            <a href="https://shopee.vn/Qu%E1%BA%A7n-boxer-nam-PROFIT-cao-c%E1%BA%A5p-combo-3-qu%E1%BA%A7n-x%C3%AC-co-gi%C3%A3n-tho%C3%A1ng-kh%C3%AD-kh%C3%A1ng-khu%E1%BA%A9n-BOXERMAN-i.724547901.29203943077?sp_atk=5c337762-99ce-4b17-8e4a-a717dae21c7c&xptdk=5c337762-99ce-4b17-8e4a-a717dae21c7c"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 4 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="5">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/Bikini/4.webp" alt="Tour Image">
+                        <div class="tour-content">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span> <span>(4.8)</span>
+                            </div>
+                            <h3>Quần lót boxy</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 117.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 25</p>
+                            </div>
+                            <a href="https://shopee.vn/Qu%E1%BA%A7n-L%C3%B3t-Boxer-Nam-COMBO-5C-LA01-thun-l%E1%BA%A1nh-tho%C3%A1ng-kh%C3%AD-co-gi%C3%A3n-4-chi%E1%BB%81u-set-5-m%C3%A0u-i.1202142361.24317871546?sp_atk=1bfe1122-2e4b-4206-af09-0c78182b8e76&xptdk=1bfe1122-2e4b-4206-af09-0c78182b8e76"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 5 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="5">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/Bikini/5.webp" alt="Tour Image">
+                        <div class="tour-content">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span> <span>(4.8)</span>
+                            </div>
+                            <h3>Bikini áo Nude ren</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 243.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 80</p>
+                            </div>
+                            <a href="https://shopee.vn/Set-3-M%C3%B3n-Bikini-%C3%81o-Nude-Ph%E1%BB%91i-Ren-Qu%E1%BA%A7n-N%C3%A2u-T%C3%A2y-Sang-Ch%E1%BA%A3nh-Huy%E1%BB%81n-B%C3%AD-Ch%E1%BA%A5t-L%C6%B0%E1%BB%9Bi-M%E1%BB%81m-M%E1%BB%8Bn-Co-Gi%C3%A3n-i.716480415.27430516227?sp_atk=ec8443b6-078d-4ebd-95ba-00e0b4e6dbb3&xptdk=ec8443b6-078d-4ebd-95ba-00e0b4e6dbb3"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 6 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="5">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/Bikini/6.webp" alt="Tour Image">
+                        <div class="tour-content">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span> <span>(4.8)</span>
+                            </div>
+                            <h3>Bikini đi biển</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 174.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 25</p>
+                            </div>
+                            <a href="https://shopee.vn/Set-bikini-2-m%C3%B3n-%C4%91i-bi%E1%BB%83n-CHIYO.SG-phong-c%C3%A1ch-m%C3%B9a-h%C3%A8-n%C4%83ng-%C4%91%E1%BB%99ng-S171-i.212616038.26726572024?sp_atk=3673382e-9610-4a1b-a3a2-95b952ccc4ca&xptdk=3673382e-9610-4a1b-a3a2-95b952ccc4ca"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 7 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="5">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/Bikini/7.webp" alt="Tour Image">
+                        <div class="tour-content">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span> <span>(4.8)</span>
+                            </div>
+                            <h3>Đầm ren bodybody</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 189.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 55</p>
+                            </div>
+                            <a href="https://shopee.vn/-C%C3%B3-Size-S-M-H%C3%A0ng-Lo%E1%BA%A1i-1-%C4%90%E1%BA%A7m-Body-D%C3%A0i-Ren-L%C6%B0%E1%BB%9Bi-Xuy%C3%AAn-Th%E1%BA%A5u-Kho%C3%A9t-Ng%E1%BB%B1c-Video-Th%E1%BA%ADt-K%C3%A8m-Qu%E1%BA%A7n-Bikini--i.412036582.28727311050?sp_atk=e2e2ed8b-1726-4551-bd7f-3bfc3397cda5&xptdk=e2e2ed8b-1726-4551-bd7f-3bfc3397cda5"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 8 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="5">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/Bikini/8.webp" alt="Tour Image" class="img-fluid">
+                        <div class="tour-content">
+                            <div class="rating"><span class="stars">★★★★★</span> <span>(4.8)</span></div>
+                            <h3>Bikini hai mảnh</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 135.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 50</p>
+                            </div>
+                            <a href="https://shopee.vn/Bikini-VENUS-2-M%E1%BA%A3nh-%C3%81o-B%E1%BA%A3n-Ngang-Qu%E1%BA%A7n-Ship-Nhi%E1%BB%81u-M%C3%A0u-Sang-Ch%E1%BA%A3nh-i.1509730520.29432909360?sp_atk=c08f4b1e-2698-491c-a1cb-20411bff004c&xptdk=c08f4b1e-2698-491c-a1cb-20411bff004c"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 9 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="5">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/Bikini/9.webp" alt="Tour Image" class="img-fluid">
+                        <div class="tour-content">
+                            <div class="rating"><span class="stars">★★★★★</span> <span>(4.8)</span></div>
+                            <h3>Quần áo Bikini</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 90.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 50</p>
+                            </div>
+                            <a href="https://shopee.vn/Set-B%E1%BB%99-Bikini-%C3%A1o-c%C3%B3-%C4%91%E1%BB%87m-v%C3%A0-qu%E1%BA%A7n-short-%C4%91i-bi%E1%BB%83n-m%C3%B9a-h%C3%A8-cho-n%E1%BB%AF-m6007-i.22382549.28231738059?sp_atk=4e35fa87-5808-42b6-9524-ee6432ac0703&xptdk=4e35fa87-5808-42b6-9524-ee6432ac0703"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 10 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="5">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/Bikini/10.webp" alt="Tour Image" class="img-fluid">
+                        <div class="tour-content">
+                            <div class="rating"><span class="stars">★★★★★</span> <span>(4.8)</span></div>
+                            <h3>Áo Bra đi biển</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 194.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 50</p>
+                            </div>
+                            <a href="https://shopee.vn/Set-Bikini-%C3%81o-Bra-%C4%90i-Bi%E1%BB%83n-Ph%E1%BB%91i-Vi%E1%BB%81n-Hoa-D%C3%A0nh-Cho-C%C3%A1c-N%C3%A0ng-Di%E1%BB%87n-%C4%90i-Bi%E1%BB%83n-C%E1%BB%B1c-Xinh-Nh%E1%BA%B9-Nh%C3%A0ng-Quy%E1%BA%BFn-R%C5%A9-T%E1%BB%95ng-Kho-Th%E1%BA%A3o-Chi-i.1012585125.25564527166?sp_atk=169f118a-1c41-40f2-8b82-b031aca2a54a&xptdk=169f118a-1c41-40f2-8b82-b031aca2a54a"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 11 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="5">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/Bikini/11.webp" alt="Tour Image" class="img-fluid">
+                        <div class="tour-content">
+                            <div class="rating"><span class="stars">★★★★★</span> <span>(4.8)</span></div>
+                            <h3>Bikini 3 món</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 124.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 50</p>
+                            </div>
+                            <a href="https://shopee.vn/SET-3-M%C3%B3n-Bikini-L%C6%B0%E1%BB%9Bi-M%E1%BA%A3nh-Ph%E1%BB%91i-K%C3%A8m-Ch%C3%A2n-V%C3%A1y-PINKSTORE29-Phong-C%C3%A1ch-M%C3%B9a-H%C3%A8-%C4%90i-Bi%E1%BB%83n-S076-i.259333673.28731570637?sp_atk=9832d877-24a1-425b-9978-904215816cd9&xptdk=9832d877-24a1-425b-9978-904215816cd9"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 12 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="5">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/Bikini/12.webp" alt="Tour Image" class="img-fluid">
+                        <div class="tour-content">
+                            <div class="rating"><span class="stars">★★★★★</span> <span>(4.8)</span></div>
+                            <h3>Bikini một mảnh</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 150.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 50</p>
+                            </div>
+                            <a href="https://shopee.vn/RICH-THEY-Vintage-M%C3%B4ng-B%E1%BB%8Dc-M%E1%BB%99t-M%E1%BA%A3nh-%C4%90%E1%BB%93-B%C6%A1i-Ph%E1%BB%A5-N%E1%BB%AF-M%C3%B9a-H%C3%A8-Th%E1%BB%9Di-Trang-H%E1%BB%9F-L%C6%B0ng-Bikini-%C4%90%E1%BB%93-B%C6%A1i-i.1297110159.27407401644?sp_atk=6d3da238-4777-4587-aac5-74c37c8f7617&xptdk=6d3da238-4777-4587-aac5-74c37c8f7617"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Trang 6 -->
+                <!-- Tour 1 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="6">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/Child-fs/1.webp" alt="Tour Image">
+                        <div class="tour-content">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span> <span>(4.8)</span>
+                            </div>
+                            <h3>Quần áo trẻ em</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 67.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 23</p>
+                            </div>
+                            <a href="https://shopee.vn/Qu%E1%BA%A7n-%C3%A1o-tr%E1%BA%BB-em-Set-B%E1%BB%99-%C4%91%E1%BB%93-s%C6%A1-mi-th%E1%BB%9Di-trang-cho-b%C3%A9-trai-g%C3%A1i-%C4%91i-bi%E1%BB%83n-du-l%E1%BB%8Bch-m%C3%B9a-h%C3%A8-cho-b%C3%A9-9-36th%C3%A1ng-i.1277080330.28302228271?sp_atk=deda43c5-f3b0-49ee-b32b-0de70f0b44bb&xptdk=deda43c5-f3b0-49ee-b32b-0de70f0b44bb"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 2 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="6">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/Child-fs/2.webp" alt="Tour Image">
+                        <div class="tour-content">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span> <span>(4.8)</span>
+                            </div>
+                            <h3>Váy bé gái</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 89.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 25</p>
+                            </div>
+                            <a href="https://shopee.vn/-Gi%E1%BA%A3m-gi%C3%A1-V%C3%A1y-b%C3%A9-g%C3%A1i-V%C3%A1y-Vest-kh%C3%B4ng-tay-th%E1%BB%9Di-trang-ph%C3%B9-h%E1%BB%A3p-i.1526608131.27385371297?sp_atk=b55b3723-0e3a-4249-8c73-362816707b27&xptdk=b55b3723-0e3a-4249-8c73-362816707b27"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 3 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="6">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/Child-fs/3.webp" alt="Tour Image">
+                        <div class="tour-content">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span> <span>(4.8)</span>
+                            </div>
+                            <h3>Đầm bé gái</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 97.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 25</p>
+                            </div>
+                            <a href="https://shopee.vn/-Gi%E1%BA%A3m-Gi%C3%A1-%C4%90%E1%BA%A7m-Tr%E1%BA%BB-Em-Trung-Nh%E1%BB%8F-Phong-C%C3%A1ch-M%E1%BB%9Bi-%C4%90%E1%BA%A7m-B%C3%A9-G%C3%A1i-Th%E1%BB%9Di-Trang-i.1526608131.27785897707?sp_atk=7b0ec402-6d91-4515-b231-0dc156dc2679&xptdk=7b0ec402-6d91-4515-b231-0dc156dc2679"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 4 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="6">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/Child-fs/4.webp" alt="Tour Image">
+                        <div class="tour-content">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span> <span>(4.8)</span>
+                            </div>
+                            <h3>Quần áo trẻ em</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 189.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 25</p>
+                            </div>
+                            <a href="https://shopee.vn/-Gi%E1%BA%A3m-gi%C3%A1-%C3%81o-thun-ng%E1%BA%AFn-tay-%C4%91%E1%BA%B9p-trai-phong-c%C3%A1ch-m%E1%BB%9Bi-m%C3%B9a-h%C3%A8-th%E1%BB%9Di-trang-i.1526608131.40252269993?sp_atk=cebcb3ba-aa52-48fc-8672-2fd35bb09b0e&xptdk=cebcb3ba-aa52-48fc-8672-2fd35bb09b0e"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 5 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="6">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/Child-fs/5.webp" alt="Tour Image">
+                        <div class="tour-content">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span> <span>(4.8)</span>
+                            </div>
+                            <h3>Quần áo</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 189.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 80</p>
+                            </div>
+                            <a href="https://shopee.vn/-Suit-B%E1%BB%99-%C4%91%E1%BB%93-s%E1%BB%8Dc-in-ch%E1%BB%AF-th%E1%BB%9Di-trang-cho-b%C3%A9-trai-phong-c%C3%A1ch-m%E1%BB%9Bi-phi%C3%AAn-b%E1%BA%A3n-H%C3%A0n-Qu%E1%BB%91c-i.985863179.28885962142?sp_atk=cef8976c-7060-4446-8a32-ef74bfa4e273&xptdk=cef8976c-7060-4446-8a32-ef74bfa4e273"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 6 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="6">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/Child-fs/6.webp" alt="Tour Image">
+                        <div class="tour-content">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span> <span>(4.8)</span>
+                            </div>
+                            <h3>Đồ bộ</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 190.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 25</p>
+                            </div>
+                            <a href="https://shopee.vn/(h%C3%A0ng-thi%E1%BA%BFt-k%E1%BA%BF-chu%E1%BA%A9n-%E1%BA%A3nh)-Set-qu%E1%BA%A7n-%C3%A1o-s%E1%BB%8Dc-xanh-v%C3%A0ng-ph%E1%BB%91i-qu%E1%BA%A7n-tr%E1%BA%AFng-%C4%91i-bi%E1%BB%83n-du-l%E1%BB%8Bch-%C4%91i-ch%C6%A1i-%C4%91i-h%E1%BB%8Dc-i.8596919.24443065126?sp_atk=021da2c4-721c-40e8-9ff5-e3b1aadd7089&xptdk=021da2c4-721c-40e8-9ff5-e3b1aadd7089"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 7 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="6">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/Child-fs/7.webp" alt="Tour Image">
+                        <div class="tour-content">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span> <span>(4.8)</span>
+                            </div>
+                            <h3>Quần áo Hàn Quốc</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 189.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 55</p>
+                            </div>
+                            <a href="https://shopee.vn/%C3%81o-l%C6%B0%E1%BB%9Bi-ki%E1%BB%83u-d%C3%A1ng-H%C3%A0n-Qu%E1%BB%91c-c%E1%BB%95-%C3%A1o-s%C6%A1-mi-l%E1%BB%8Bch-s%E1%BB%B1-m%E1%BA%B7c-%C4%91i-du-l%E1%BB%8Bch-%C4%91i-ch%C6%A1i-%C4%91i-bi%E1%BB%83n-ph%E1%BB%91i-h%E1%BB%8Da-ti%E1%BA%BFt-%C3%94-VU%C3%94NG-i.1189126562.29885443364?sp_atk=12d4c5a9-0d90-4c4f-92de-8829837d245f&xptdk=12d4c5a9-0d90-4c4f-92de-8829837d245f"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 8 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="6">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/Child-fs/8.webp" alt="Tour Image" class="img-fluid">
+                        <div class="tour-content">
+                            <div class="rating"><span class="stars">★★★★★</span> <span>(4.8)</span></div>
+                            <h3>Váy bé gái</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 116.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 50</p>
+                            </div>
+                            <a href="https://shopee.vn/-%C6%AFu-%C4%91%C3%A3i-%C4%91%E1%BA%B7c-bi%E1%BB%87t-V%C3%A1y-b%C3%A9-g%C3%A1i-V%C3%A1y-hoa-th%E1%BB%9Di-trang-phong-c%C3%A1ch-m%E1%BB%9Bi-i.1526608131.40201018451?sp_atk=af59b213-43ac-4d18-afb4-60310b06a427&xptdk=af59b213-43ac-4d18-afb4-60310b06a427"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 9 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="6">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/Child-fs/10.webp" alt="Tour Image" class="img-fluid">
+                        <div class="tour-content">
+                            <div class="rating"><span class="stars">★★★★★</span> <span>(4.8)</span></div>
+                            <h3>Bộ Hawai</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 90.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 50</p>
+                            </div>
+                            <a href="https://shopee.vn/B%E1%BB%99-s%C6%A1-mi-h%E1%BB%8Da-ti%E1%BA%BFt-xanh-K9-hoa-l%C3%A1-h%C3%ACnh-con-v%E1%BA%ADt-set-%C4%91%E1%BB%93-b%C6%A1i-gia-%C4%91%C3%ACnh-%C4%91i-bi%E1%BB%83n-du-l%E1%BB%8Bch-gi%C3%A1-r%E1%BA%BB-i.1167397302.28701853085?sp_atk=670357be-4b55-4d91-badc-afafe44949e4&xptdk=670357be-4b55-4d91-badc-afafe44949e4"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 10 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="6">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/Child-fs/10.webp" alt="Tour Image" class="img-fluid">
+                        <div class="tour-content">
+                            <div class="rating"><span class="stars">★★★★★</span> <span>(4.8)</span></div>
+                            <h3>Đầm hoa</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 116.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 50</p>
+                            </div>
+                            <a href="https://shopee.vn/-Gi%E1%BA%A3m-gi%C3%A1-%C4%90%E1%BA%A7m-hoa-b%C3%A9-g%C3%A1i-%C4%90%E1%BA%A7m-c%C3%B4ng-ch%C3%BAa-phong-c%C3%A1ch-m%E1%BB%9Bi-th%E1%BB%9Di-trang-i.1526608131.27785897705?sp_atk=fa1234de-8704-4ddb-8e6e-9ae6f1a6379d&xptdk=fa1234de-8704-4ddb-8e6e-9ae6f1a6379d"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 11 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="6">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/Child-fs/11.webp" alt="Tour Image" class="img-fluid">
+                        <div class="tour-content">
+                            <div class="rating"><span class="stars">★★★★★</span> <span>(4.8)</span></div>
+                            <h3>Váy bé gái</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 116.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 50</p>
+                            </div>
+                            <a href="https://shopee.vn/-Gi%E1%BA%A3m-gi%C3%A1-V%C3%A1y-b%C3%A9-g%C3%A1i-phong-c%C3%A1ch-m%E1%BB%9Bi-V%C3%A1y-ng%E1%BA%AFn-th%E1%BB%9Di-trang-ph%C3%B9-h%E1%BB%A3p-i.1526608131.27535772607?sp_atk=c2155ed5-81d0-4658-a567-e5d67750d755&xptdk=c2155ed5-81d0-4658-a567-e5d67750d755"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 12 -->
+                <div class="tour-card-wrapper" id="card-fs" data-page="6">
+                    <div class="tour-card">
+                        <img src="../IMG/Fashion/Child-fs/12.webp" alt="Tour Image" class="img-fluid">
+                        <div class="tour-content">
+                            <div class="rating"><span class="stars">★★★★★</span> <span>(4.8)</span></div>
+                            <h3>Phong cách TQ</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Viet Nam</p>
+                            <p><i class="fas fa-dollar-sign"></i> Giá: 216.000đ</p>
+                            <hr>
+                            <div class="details-row">
+                                <p><i class="fas fa-user"></i> 50</p>
+                            </div>
+                            <a href="https://shopee.vn/-B%E1%BB%99-%C4%91%E1%BB%93-Phong-c%C3%A1ch-m%E1%BB%9Bi-Th%E1%BB%9Di-trang-b%C3%A9-trai-in-h%C3%ACnh-d%E1%BB%85-th%C6%B0%C6%A1ng-B%E1%BB%99-%C4%91%E1%BB%93-Trung-Qu%E1%BB%91c-m%E1%BB%9Bi-i.985863179.42700493052?sp_atk=256ac32a-136d-4e79-8fdb-77b546b51521&xptdk=256ac32a-136d-4e79-8fdb-77b546b51521"
+                                class="details-link" target="_blank">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+        </aside>
+        <ul class="pagination" id="pagination">
+            <li class="page-item"><a class="page-link" href="#" data-page="prev">Previous</a></li>
+            <li class="page-item"><a class="page-link active" href="#" data-page="1">1</a></li>
+            <li class="page-item"><a class="page-link" href="#" data-page="2">2</a></li>
+            <li class="page-item"><a class="page-link" href="#" data-page="3">3</a></li>
+            <li class="page-item"><a class="page-link" href="#" data-page="4">4</a></li>
+            <li class="page-item"><a class="page-link" href="#" data-page="5">5</a></li>
+            <li class="page-item"><a class="page-link" href="#" data-page="6">6</a></li>
+            <li class="page-item"><a class="page-link" href="#" data-page="next">Next</a></li>
+        </ul>
+    </div>
+</body>
+</html>
